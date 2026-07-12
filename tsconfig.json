@@ -1,6 +1,57 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
-  }
+    "strict": true,
+    "noImplicitAny": true,
+    "baseUrl": ".",
+    "ignoreDeprecations": "6.0",
+    "paths": {
+      "@/*": [
+        "./*"
+      ],
+      "@components/*": [
+        "./components/*"
+      ],
+      "@constants/*": [
+        "./constants/*"
+      ],
+      "@database/*": [
+        "./database/*"
+      ],
+      "@hooks/*": [
+        "./hooks/*"
+      ],
+      "@services/*": [
+        "./services/*"
+      ],
+      "@providers/*": [
+        "./providers/*"
+      ],
+      "@stores/*": [
+        "./stores/*"
+      ],
+      "@types/*": [
+        "./types/*"
+      ],
+      "@utils/*": [
+        "./utils/*"
+      ],
+      "@localization/*": [
+        "./localization/*"
+      ],
+      "@data/*": [
+        "./data/*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts",
+    "nativewind-env.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

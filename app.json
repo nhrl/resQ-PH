@@ -1,25 +1,54 @@
 {
   "expo": {
-    "name": "ResQ-PH",
-    "slug": "ResQ-PH",
+    "name": "ResQ PH",
+    "slug": "resq-ph",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "ios": {
-      "supportsTablet": true
-    },
+    "icon": "./assets/images/icon.png",
+    "scheme": "resqph",
+    "userInterfaceStyle": "automatic",
     "android": {
+      "package": "ph.resq.app",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundColor": "#D32F2F"
       },
-      "predictiveBackGestureEnabled": false
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "VIBRATE",
+        "RECORD_AUDIO",
+        "WAKE_LOCK"
+      ]
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#D32F2F"
+        }
+      ],
+      "expo-font",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "ResQ PH needs camera access to use the flashlight during emergencies."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "ResQ PH uses your location to guide emergency responders to you."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
     }
   }
 }

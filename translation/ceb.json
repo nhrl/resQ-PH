@@ -1,0 +1,376 @@
+{
+  "contacts": {
+    "title": "Mga Emergency Contact",
+    "nationalHotlines": "Nasodnong Hotline",
+    "myContacts": "Akong mga Contact",
+    "noContacts": "Wala pay gidugang nga contact.",
+    "addContact": "Dugangi og Contact",
+    "namePlaceholder": "Ngalan",
+    "phonePlaceholder": "Numero sa Telepono",
+    "save": "I-save",
+    "cancel": "Kanselahon",
+    "errorRequired": "Gikinahanglan ang ngalan ug numero sa telepono.",
+    "errorInvalidPhone": "Adunay dili balido nga karakter ang numero.",
+    "categories": {
+      "family": "Pamilya",
+      "doctor": "Doktor",
+      "barangay": "Barangay",
+      "hospital": "Ospital",
+      "other": "Uban pa"
+    },
+    "callAccessibility": "Tawagan si {{name}}",
+    "deleteAccessibility": "Papasa si {{name}}"
+  },
+  "hotlines": {
+    "nationalEmergency": "Nasodnong Emergency Hotline",
+    "pnp": "Kapulisan sa Pilipinas",
+    "bfp": "Kagamhanan sa Bumbero",
+    "redCross": "Philippine Red Cross",
+    "ndrrmc": "NDRRMC"
+  },
+  "tabs": {
+    "home": "Home",
+    "panic": "Panic",
+    "settings": "Setting"
+  },
+  "medical": {
+    "bleeding": {
+      "title": "Pagdugo",
+      "warningSigns": ["Makita nga samad nga nagdugo", "Basa ang panapton sa dugo"],
+      "doNot": ["Ayaw kuhaa ang naigo nga butang.", "Ayaw kuhaa ang basa nga panapton — dugangi lang sa ibabaw."],
+      "whenToCall911": ["Wala mohunong ang dugo human sa 10 minutos nga pagpugong.", "Nagsirit ang dugo (posibleng arterya ang nasamdan).", "Adunay timailhan sa shock (maluspad, matugnaw, naglibog)."],
+      "tree": {
+        "q1": "Nagsirit ba o nagpulsada ang paggawas sa dugo?",
+        "i1": "Tingali arterya ang nasamdan. Tawag sa 911 karon ug pugngi og maayo ang samad gamit ang limpyo nga panapton nga dili kuhaon.",
+        "i2": "Panghinlo sa kamot kung mahimo, dayon pugngi og maayo ang samad gamit ang limpyo nga panapton.",
+        "i3": "Kung mahimo, ibayaw ang nasamdan nga bahin labaw sa kasing-kasing samtang gipugngan gihapon.",
+        "q2": "Nihunong na ba ang dugo human sa mga 10 minutos nga padayon nga pagpugong?",
+        "i4": "Bendahi og maayo ang samad apan ayaw hugti kaayo. Pagpatan-aw sa doktor para sa hustong check-up.",
+        "i5": "Padayon sa pagpugong ug dugangi og panapton sa ibabaw. Tawag sa 911 karon kung wala pa gitawgan."
+      }
+    },
+    "burn": {
+      "title": "Paso",
+      "warningSigns": ["Pagpula o paggawas og bulad sa panit", "Kasakit sa naigo nga bahin"],
+      "doNot": ["Ayaw pagbutang og yelo, mantekilya, o toothpaste.", "Ayaw butoha ang bulad."],
+      "whenToCall911": ["Dako, lalom, o naa sa nawong/kamot/kinatawo ang paso.", "Puti, gahi, o nasunog nga daw panit sa hayop ang panit.", "Hinungdan sa kemikal o kuryente ang paso."],
+      "tree": {
+        "q1": "Dako, lalom, o naa ba sa nawong, kamot, o kinatawo ang paso?",
+        "i1": "Tawag sa 911 karon. Samtang naghulat, bugnawa ang paso ilalom sa bugnaw nga nagdagayday nga tubig sulod sa 10-20 minutos.",
+        "i2": "Bugnawa ang paso ilalom sa bugnaw (dili grabe katugnaw) nga nagdagayday nga tubig sulod sa 10-20 minutos.",
+        "i3": "Kuhaa ang higot nga butang sama sa singsing o alahas duol sa paso ayha pa kini manghubag.",
+        "i4": "Taboni og luag gamit ang limpyo ug uga nga panapton. Ayaw pagbutang og yelo, mantekilya, o unguwento."
+      }
+    },
+    "electric-shock": {
+      "title": "Naeletrik",
+      "warningSigns": ["Paso sa gikataptan nga bahin", "Pagkawala sa panimuot", "Dili regular nga pagginhawa"],
+      "doNot": ["Ayaw hikapa ang tawo samtang naka-kontak pa siya sa gigikanan sa kuryente.", "Ayaw paggamit og tubig duol sa buhi nga kuryente."],
+      "whenToCall911": ["Bisan unsang pagkaeletrik gikan sa taas nga boltahe.", "Walay panimuot o dili normal ang pagginhawa sa tawo.", "Makita nga paso sa gisudlan/gigawasan."],
+      "tree": {
+        "q1": "Naka-kontak pa ba ang tawo sa gigikanan sa kuryente?",
+        "i1": "AYAW siya hikapa. Patya ang kuryente, o gamit og uga ug dili konduktor nga butang para ibulag siya niini.",
+        "q2": "Normal ba ang pagginhawa sa tawo?",
+        "i2": "Tawag sa 911. Taboni ang bisan unsang makita nga paso gamit ang limpyo ug uga nga panapton ug bantayi siya og maayo hangtod moabot ang tabang.",
+        "i3": "Tawag sa 911 karon ug sugdi dayon ang CPR (tan-awa ang CPR Guide)."
+      }
+    },
+    "snake-bite": {
+      "title": "Pagpaak sa Bitin",
+      "warningSigns": ["Marka sa gitusok", "Paghubag ug kasakit", "Kalibang o kalisod sa pagginhawa"],
+      "doNot": ["Ayaw putla ang samad o sulayi og siphon ang hilo.", "Ayaw pagbutang og higot nga tourniquet.", "Ayaw sulayi dakpon o patyon ang bitin."],
+      "whenToCall911": ["Bisan unsang pagpaak sa bitin — atimana kini isip emergency.", "Kalisod sa pagginhawa o pagtulon.", "Paspas nga paghubag o grabeng kasakit."],
+      "tree": {
+        "i1": "Tawag sa 911 karon — atimana ang matag pagpaak sa bitin isip emergency.",
+        "i2": "Palinawa ug dili palihoka ang tawo aron mahinay ang pagkuyanap sa hilo.",
+        "i3": "Ipahiluna nga mas ubos sa kasing-kasing ang gipaakan nga bahin. Kuhaa ang higot nga sanina o alahas duol sa paak ayha manghubag.",
+        "q1": "Naglisod ba ang tawo sa pagginhawa o pagtulon?",
+        "i4": "Grabe kini — siguroha nga natawgan na ang 911 ug bantayi og maayo ang pagginhawa hangtod moabot ang tabang.",
+        "i5": "Luag nga pugngan ang gipaakan nga bahin gamit ang splint kung mahimo ug dad-a dayon sa ospital."
+      }
+    },
+    "poisoning": {
+      "title": "Pagkalasin",
+      "warningSigns": ["Pagsuka, kalibang, o katulog", "Paso duol sa baba", "Lahi nga baho sa gininhawa"],
+      "doNot": ["Ayaw pasukaa gawas kung gisugo sa poison control professional.", "Ayaw hatagi og bisan unsa nga imnon o kaonon kung walay panimuot ang tawo."],
+      "whenToCall911": ["Walay panimuot o naglisod sa pagginhawa ang tawo.", "Nahibaloan o gidudahang nakatulon og makahilo nga butang.", "Pagkakuyaw human ma-expose."],
+      "tree": {
+        "q1": "Naa ba sa panimuot ug nagtubag ang tawo?",
+        "i1": "Ilayo siya sa gigikanan sa hilo. Tipigi ang sudlanan o hilo para ipakita sa responders.",
+        "q2": "Naa ba sa panit o mata ang hilo (dili nilamoy)?",
+        "i2": "Kuhaa ang kontaminado nga sanina ug hugasi ang panit o mata og limpyo nga tubig sulod sa 15-20 minutos.",
+        "i4": "Tawag sa 911 o poison control center karon. Ayaw pasukaa gawas kung gisugo sa propesyonal.",
+        "i3": "Tawag dayon sa 911. Ipahiluna siya sa recovery position kung nagginhawa, ug bantayi og maayo."
+      }
+    },
+    "fracture": {
+      "title": "Bali",
+      "warningSigns": ["Baliko o naghubag nga bahin", "Grabeng kasakit", "Dili malihok ang bahin"],
+      "doNot": ["Ayaw sulayi ituwid o iayo ang bukog.", "Ayaw balhina ang tawo gawas kung gikinahanglan para sa kaluwasan."],
+      "whenToCall911": ["Makita nga migawas ang bukog sa panit.", "Matugnaw, maluspad, o wala nay pamati ang bahin ubos sa samad.", "Gidudahang naay kadaot sa bukobukog, liog, o ulo."],
+      "tree": {
+        "q1": "Makita ba nga migawas ang bukog, o matugnaw, maluspad, o wala nay pamati ang bahin?",
+        "i1": "Tawag sa 911 karon. Ayaw sulayi ituwid ang bukog — ipahiluna nga dili malihok ang bahin hangtod moabot ang tabang.",
+        "i2": "Ipahiluna nga dili malihok ang nasamdan nga bahin. Suportahi ang bahin sa ibabaw ug ubos sa samad.",
+        "i3": "Pagbutang og splint gamit ang gahi nga butang ug padding kung mahimo nga luwas, ug pagbutang og yelo nga giputos sa panapton aron makunhoran ang paghubag."
+      }
+    },
+    "heat-stroke": {
+      "title": "Heat Stroke",
+      "warningSigns": ["Taas nga temperatura sa lawas", "Init, uga o pula nga panit", "Kalibang o pagkawala sa panimuot"],
+      "doNot": ["Ayaw hatagi og imnon ang taong walay panimuot.", "Ayaw gamiton ang grabe katugnaw nga tubig — bugnawa hinay-hinay."],
+      "whenToCall911": ["Grabe katugnaw ang lawas kung hikapon.", "Naglibog, nawad-an og panimuot, o nangurog ang tawo.", "Walay kausaban human sa pagbugnaw."],
+      "tree": {
+        "q1": "Naglibog, walay panimuot, o nangurog ba ang tawo?",
+        "i1": "Tawag sa 911 karon. Ibalhin siya sa bugnaw ug malandong nga lugar ug sugdi ang pagbugnaw gamit ang mainiton nga tubig samtang naghulat.",
+        "i2": "Ibalhin dayon siya sa bugnaw ug malandong nga lugar ug kuhaa ang sobra nga sanina.",
+        "i3": "Bugnawa ang lawas gamit ang mainiton nga tubig, pagpaypay, o basa nga panapton. Pagbutang og cool pack sa liog, kilikili, ug singit.",
+        "q2": "Nag-uswag ba ang tawo human sa pipila ka minutos nga pagbugnaw?",
+        "i4": "Padayon sa pagbugnaw ug hatagi og gamay nga bugnaw nga tubig kung naa sa panimuot. Padayon sa pagbantay sa pagginhawa ug panimuot."
+      }
+    },
+    "drowning": {
+      "title": "Nalumos",
+      "warningSigns": ["Naluwas gikan sa tubig nga dili normal ang pagginhawa", "Ubo, nalumos, o walay panimuot"],
+      "doNot": ["Ayaw pagsulod sa lalom o paspas nga tubig gawas kung bansay.", "Ayaw ilangan ang pagsugod og rescue breathing/CPR aron paagson lang ang tubig sa baga."],
+      "whenToCall911": ["Bisan unsang hapit nalumos nga insidente — pagpatan-aw kanunay sa doktor.", "Dili nagginhawa o walay panimuot ang tawo.", "Padayon nga pag-ubo o kalisod sa pagginhawa human maluwas."],
+      "tree": {
+        "i1": "Luwas nga kuhaon ang tawo sa tubig. Ayaw pagsulod sa lalom o paspas nga tubig gawas kung bansay.",
+        "q1": "Nagginhawa ba ang tawo?",
+        "i2": "Tawag sa 911 para sa pagpatan-aw. Ipahiluna siya sa recovery position, ipabilin nga init, ug bantayi og maayo — mahimong adunay komplikasyon human maluwas.",
+        "i3": "Tawag sa 911 karon ug sugdi dayon ang CPR (tan-awa ang CPR Guide). Ayaw ilangan ang CPR aron paagson lang ang tubig sa baga."
+      }
+    },
+    "fainting": {
+      "title": "Pagkalipong",
+      "warningSigns": ["Kalit nga mubo nga pagkawala sa panimuot", "Maluspad ug singot nga panit ayha malipong"],
+      "doNot": ["Ayaw hatagi og pagkaon o ilimnon dayon human malipong.", "Ayaw pugsa ang tawo nga molingkod o motindog dayon."],
+      "whenToCall911": ["Wala mabalik ang panimuot sulod sa usa ka minuto.", "May kauban nga kasakit sa dughan, dili regular nga pitik sa kasing-kasing, o kadaot gikan sa pagkahulog.", "Balikbalik nga pagkalipong."],
+      "tree": {
+        "i1": "Ipahiluna nga patag ang tawo ug ibayaw ang mga tiil mga 12 pulgada. Luagi ang higot nga sanina sa liog.",
+        "q1": "Nabalik ba ang panimuot sulod sa mga usa ka minuto?",
+        "i2": "Tabangi siya nga molingkod hinay-hinay kung naa na sa panimuot. Siguroha nga naay presko nga hangin ug luna sa iyang palibot.",
+        "i3": "Tawag sa 911 karon — kinahanglan ang dinalian nga atensyon medikal."
+      }
+    },
+    "asthma-attack": {
+      "title": "Atake sa Hangin",
+      "warningSigns": ["Singgit o paghangus sa pagginhawa", "Kakulang sa gininhawa", "Paghugot sa dughan"],
+      "doNot": ["Ayaw tugoti nga mohigda nga patag — ipahiluna nga naglingkod.", "Ayaw siya biyai nga nag-inusara."],
+      "whenToCall911": ["Walay kausaban human gigamit ang inhaler.", "Nagpula o nagbughaw ang ngabil o mga tudlo.", "Dili makasulti og bug-os nga sentence ang tawo o kapoy na sa pagginhawa."],
+      "tree": {
+        "i1": "Tabangi ang tawo nga molingkod og tul-id ug magpabilin nga kalma. Ayaw tugoti nga mohigda nga patag.",
+        "q1": "Naa ba siyay dala nga reliever inhaler?",
+        "i2": "Tabangi siya nga gamiton ang iyang inhaler ug dasiga ang hinay ug lig-on nga pagginhawa.",
+        "q2": "Nag-uswag ba siya human magamit ang inhaler?",
+        "i3": "Padayon sa pagbantay ug hatagi og balikbalik nga dosis sa inhaler sumala sa iyang action plan kung mobalik ang timailhan.",
+        "i4": "Tawag sa 911 karon. Ipahiluna siyang naglingkod ug kalma hangtod moabot ang tabang."
+      }
+    },
+    "choking": {
+      "title": "Nabuktan",
+      "warningSigns": ["Naggunit sa tutunlan", "Dili makasulti, makaubo, o makaginhawa"],
+      "doNot": ["Ayaw buhata ang abdominal thrusts kung kaya pa niya mag-ubo o mosulti."],
+      "whenToCall911": ["Dili makagawas ang butang nga nabuktan.", "Nawad-an og panimuot ang tawo."],
+      "tree": {
+        "q1": "Kaya ba niya mag-ubo, mosulti, o moginhawa?",
+        "i1": "Dasiga siya nga padayon nga mag-ubo og kusog. Pabilin uban kaniya ug bantayi og maayo.",
+        "q2": "Nakagawas na ba ang butang ug normal na ba ang iyang pagginhawa?",
+        "i3": "Maayo. Padayon sa pagbantay ug pagpatan-aw sa doktor kung padayon ang kalisod.",
+        "i2": "Hatagi siya og 5 ka kusog nga back blow taliwala sa mga abaga gamit ang palad sa imong kamot.",
+        "i4": "Kung wala molihok kana, buhata ang 5 ka abdominal thrusts (Heimlich maneuver): tindog sa iyang luyo, ibutang ang kumo sa ibabaw sa pusod, ituklod paingon sa sulod ug pataas.",
+        "q3": "Nakagawas na ba ang butang ug nagginhawa na ba siya karon?",
+        "i5": "Padayon sa pag-alternate og 5 ka back blow ug 5 ka abdominal thrust. Tawag sa 911 karon kung wala pa gitawgan."
+      }
+    },
+    "heart-attack": {
+      "title": "Atake sa Kasingkasing",
+      "warningSigns": ["Kasakit o kabug-at sa dughan", "Kasakit nga mikaylap sa bukton, apapangig, o likod", "Kakulang sa gininhawa, matugnaw nga singot"],
+      "doNot": ["Ayaw tugoti nga maghago ang tawo.", "Ayaw hatagi og pagkaon o ilimnon."],
+      "whenToCall911": ["Bisan unsang gidudahang atake sa kasingkasing — tawag dayon."],
+      "tree": {
+        "q1": "Naa ba sa panimuot ug nagtubag ang tawo?",
+        "i1": "Tawag dayon sa 911. Palingkora ang tawo, pahulaya, ug pabilin nga kalma.",
+        "q2": "Naa ba siyay reseta nga tambal sa kasingkasing (pananglitan aspirin)?",
+        "i2": "Tabangi siya nga moinom sa iyang reseta nga tambal sumala sa giingon. Padayon sa pagbantay hangtod moabot ang tabang.",
+        "i4": "Luagi ang higot nga sanina ug ipahiluna siyang kalma ug dili malihok hangtod moabot ang responders.",
+        "i3": "Susiha ang pagginhawa. Kung dili normal ang pagginhawa, sugdi dayon ang CPR (tan-awa ang CPR Guide) ug tawag sa 911."
+      }
+    },
+    "stroke": {
+      "title": "Stroke",
+      "warningSigns": ["Baliko nga nawong", "Kahuyang sa bukton", "Kalisod sa pagsulti"],
+      "doNot": ["Ayaw hatagi og pagkaon, ilimnon, o tambal.", "Ayaw tugoti nga siya mismo ang modrive."],
+      "whenToCall911": ["Bisan unsang gidudahang stroke — kritikal ang oras, tawag dayon."],
+      "tree": {
+        "q1": "Papahiyoma siya — baliko ba ang usa ka bahin sa nawong?",
+        "q2": "Pataasa ang duha niya ka bukton — nag-ubos ba ang usa ka bukton?",
+        "q3": "Pasultia siya og usa ka yano nga sentence — malito o lahi ba ang pagsulti?",
+        "i1": "Kini timailhan sa posibleng stroke. Tawag dayon sa 911 ug itala ang oras nga nagsugod ang mga timailhan.",
+        "i3": "Ipahiluna siyang kalma, naglingkod o nagbuy-od nga bahin nga taas ang ulo. Ayaw hatagi og pagkaon, ilimnon, o tambal. Bantayi ang pagginhawa hangtod moabot ang tabang.",
+        "i2": "Walay klaro nga timailhan nga nakita, apan kung gidudahan mo gihapon ang stroke, tawag sa 911 ug pagpatan-aw dayon sa doktor."
+      }
+    },
+    "seizure": {
+      "title": "Seizure",
+      "warningSigns": ["Kalit nga pangurog o pagkatig-a", "Pagkawala sa panimuot", "Lahi nga pagkinbo"],
+      "doNot": ["Ayaw hawira o pugngi ang paglihok sa tawo.", "Ayaw pagbutang og bisan unsa sa iyang baba."],
+      "whenToCall911": ["Sobra sa 5 minutos ang gidugayon sa seizure.", "Wala mabalik ang panimuot human niini.", "Kini ang una niyang nahibaloan nga seizure."],
+      "tree": {
+        "i1": "Limpyohi ang palibot sa gahi o hait nga mga butang. Ayaw siya pugngi.",
+        "i2": "Butangi og humok nga butang ang ilalom sa iyang ulo. Tan-awa ang oras sa seizure.",
+        "q1": "Sobra na ba sa 5 minutos ang seizure?",
+        "i3": "Tawag sa 911 karon — nagkinahanglan og emergency care ang tag-as nga seizure.",
+        "q2": "Nihunong na ba ang pagkurog?",
+        "i4": "Hinay nga ipahiluna siya sa iyang kilid (recovery position) aron maablihan ang agianan sa hangin. Pabilin uban kaniya hangtod hingpit siyang magmata."
+      }
+    }
+  },
+  "disasters": {
+    "typhoon": {
+      "title": "Bagyo",
+      "before": ["Bantayi ang mga weather advisory.", "Andama ang Go Bag.", "I-charge ang mga telepono.", "Tipigi ang pagkaon ug tubig.", "I-waterproof ang importanteng mga dokumento."],
+      "during": ["Pabilin sa sulod sa balay.", "Layo sa mga bintana.", "Paminaw sa opisyal nga mga anunsyo.", "Bakwit dayon kung gisugo."],
+      "after": ["Likayi ang baha.", "Susiha ang inyong balay.", "I-report ang mga peligro.", "Padayon sa pagbantay sa mga advisory."],
+      "firstAid": ["Tambali ang mga samad gamit ang limpyo nga tubig ug antiseptic.", "Bantayi ang timailhan sa hypothermia kung basa ug tugnaw.", "Ayaw hikapa ang natumba nga power lines o basa nga de-koryenteng gamit."]
+    },
+    "flood": {
+      "title": "Baha",
+      "before": ["Hibaloi ang peligro sa baha sa inyong lugar ug mga ruta sa pagbakwit.", "Ibalhin ang bililhon nga mga butang ug dokumento sa mas taas nga lugar.", "Andama ang Go Bag duol sa pultahan.", "Pagbaton og battery-powered radio."],
+      "during": ["Bakwit dayon sa mas taas nga lugar.", "Likayi ang paglakaw o pagdrive sa baha.", "Patya ang kuryente sa main breaker kung luwas buhaton.", "Likayi ang pagkontak sa tubig-baha — mahimong kontaminado kini."],
+      "after": ["Likayi ang pagbalik sa balay hangtod ideklara kini nga luwas sa awtoridad.", "Ayaw pag-inom sa gripo nga tubig hangtod makumpirma nga luwas kini.", "Ilabay ang pagkaon nga nakontak sa tubig-baha.", "Bantayi ang huyang nga estruktura ug natago nga debris."],
+      "firstAid": ["Limpyohi og maayo ang mga samad aron malikayan ang impeksyon gikan sa kontaminadong tubig.", "Bantayi ang mga timailhan sa sakit nga gikan sa tubig (hilanat, kalibang sa tiyan).", "Pagpatan-aw dayon sa doktor para sa mga samad nga na-expose sa tubig-baha."]
+    },
+    "earthquake": {
+      "title": "Linog",
+      "before": ["Ilhi ang luwas nga lugar sa matag kwarto (ilalom sa lig-on nga lamesa).", "I-secure ang bug-at nga mga kasangkapan sa bungbong.", "Andama ang Go Bag ug tino-i ang tigomanan sa pamilya.", "Praktisi ang Duck, Cover, and Hold On."],
+      "during": ["Duck, Cover, and Hold On.", "Layo sa mga bintana ug bug-at nga kasangkapan.", "Kung naa sa gawas, adto sa bukas nga lugar layo sa mga building.", "Kung nagdrive, hunong sa kilid ug pabilin sa sulod sa sakyanan."],
+      "after": ["Susiha ang imong kaugalingon ug uban pa kung naay samad.", "Damha ang mga aftershock.", "Susiha una ang tulo sa gas ug kadaot sa estruktura ayha mosulod pag-usab.", "Likayi ang paggamit sa elevator."],
+      "firstAid": ["Kontrolaha ang pagdugo gamit ang direkta nga pagpugong sa limpyo nga panapton.", "Ayaw balhina ang tawo nga gidudahang naay kadaot sa bukobukog gawas kung naay dinalian nga peligro.", "Tambali ang shock: ipahiluna nga init ug nagbuy-od ang tawo kung mahimo."]
+    },
+    "fire": {
+      "title": "Sunog",
+      "before": ["I-install ug sulayi ang mga smoke detector.", "Planoha ug praktisi ang ruta sa pagbakwit gikan sa sunog.", "Pagbutang og fire extinguisher nga daling makuha.", "Likayi ang sobra nga karga sa outlet."],
+      "during": ["Yukbo ug gawas — kamang ilalom sa aso.", "Batia ang pultahan una abrihan; ayaw abrihi kung init.", "Stop, Drop, and Roll kung nagdilaab ang sanina.", "Ayaw gamita ang elevator panahon sa sunog."],
+      "after": ["Ayaw pagbalik sa building hangtod ideklara kini nga luwas sa bumbero.", "Pagpatan-aw sa propesyonal para sa kadaot sa estruktura.", "I-dokumento ang kadaot para sa insurance ayha manglimpyo."],
+      "firstAid": ["Bugnawa ang paso ilalom sa bugnaw (dili grabe katugnaw) nga nagdagayday nga tubig sulod sa 10-20 minutos.", "Ayaw pagbutang og unguwento, mantekilya, o yelo sa paso.", "Taboni og luag ang paso gamit ang limpyo ug uga nga panapton ug pagpatan-aw sa doktor."]
+    },
+    "volcanic-eruption": {
+      "title": "Pagbuto sa Bulkan",
+      "before": ["Hibaloi ang gilay-on ninyo sa duol nga aktibo nga bulkan ug mga evacuation zone.", "Pag-andam og N95 mask ug goggles para sa abo.", "Andama ang Go Bag ug hibaloi ang mga ruta sa pagbakwit.", "Bantayi ang mga advisory sa PHIVOLCS."],
+      "during": ["Bakwit dayon kung gisugo sa awtoridad.", "Pagsul-ob og mask ug goggles para maprotektahan batok sa abo.", "Pabilin sa sulod nga sirado ang bintana ug pultahan kung dili mobakwit.", "Likayi ang mga walog sa suba ug ubos nga mga lugar tungod sa peligro sa lahar."],
+      "after": ["Limpyohi ang abo sa atop aron malikayan ang pagguba.", "Padayon sa pagsul-ob og mask sa gawas hangtod mohupay ang abo.", "Likayi ang pagdrive sa kusog nga pag-ulan sa abo — makapakunhod kini sa visibility ug makadaot sa makina.", "Padayon sa pagbantay sa mga advisory sa PHIVOLCS para sa pasidaan sa lahar."],
+      "firstAid": ["Hugasi ang mga mata ug panit nga na-expose sa abo gamit ang limpyo nga tubig.", "Taboni ang ilong ug baba aron malikayan ang paglanghap sa abo.", "Pagpatan-aw sa doktor para sa kalisod sa pagginhawa, ilabi na para sa mga naay hangin/asthma."]
+    }
+  },
+  "cpr": {
+    "adult": {
+      "title": "CPR para sa Hamtong",
+      "ageRange": "Mga hamtong ug tin-edyer (puberty pataas)",
+      "checkResponsiveness": ["Tapika og kusog ang iyang abaga ug singgit, \"Okay ka lang ba?\"", "Susiha kung normal ang pagginhawa — tan-awa ang paglihok sa dughan.", "Kung walay tubag ug dili normal ang pagginhawa, tawag dayon sa 911."],
+      "handPosition": "Ibutang ang lapalapa sa usa ka kamot sa tunga sa dughan, ang lain nga kamot sa ibabaw niini, magkabit ang mga tudlo.",
+      "compressionDepth": "Mga 5-6 cm (2 pulgada) ang giladmon.",
+      "compressionRate": "100-120 ka compressions matag minuto.",
+      "cycleInstructions": ["Ituklod og kusog ug paspas sa tunga sa dughan, tugoti nga mobalik og bug-os ang dughan taliwala sa mga compression.", "Human sa 30 ka compressions, hatagi og 2 ka rescue breath kung bansay niini (ihangad ang ulo, kupti ang ilong, ginhawa hangtod motaas ang dughan).", "Kung dili bansay o dili komportable maghatag og breaths, padayon ang hands-only compressions nga walay hunong.", "Usba-usba ang cycle sa 30 ka compressions ug 2 ka breaths hangtod moabot ang tabang."],
+      "whenToStop": ["Nagsugod na nga moginhawa og normal ang tawo o naay timailhan sa kinabuhi.", "Miabot na ang mga responder ug nagkontrol na.", "Sobra na ka kapoy aron ipadayon nga luwas.", "Nahimong peligroso ang lugar."]
+    },
+    "child": {
+      "title": "CPR para sa Bata",
+      "ageRange": "Edad 1 anyos hangtod puberty",
+      "checkResponsiveness": ["Tapika ang iyang abaga ug singgit sa iyang ngalan o \"Okay ka lang ba?\"", "Susiha kung normal ang pagginhawa — tan-awa ang paglihok sa dughan.", "Kung walay tubag ug dili normal ang pagginhawa, tawag dayon sa 911."],
+      "handPosition": "Gamit og usa o duha ka kamot (kung asa naghatag og igo nga giladmon) sa tunga sa dughan.",
+      "compressionDepth": "Mga 5 cm (2 pulgada), o mga usa-ka-tulo nga bahin sa giladmon sa dughan.",
+      "compressionRate": "100-120 ka compressions matag minuto.",
+      "cycleInstructions": ["Ituklod og lig-on sa tunga sa dughan, tugoti nga mobalik og bug-os ang dughan taliwala sa mga compression.", "Human sa 30 ka compressions, hatagi og 2 ka rescue breath kung bansay niini.", "Kung dili bansay o dili komportable maghatag og breaths, padayon ang hands-only compressions nga walay hunong.", "Usba-usba ang cycle sa 30 ka compressions ug 2 ka breaths hangtod moabot ang tabang."],
+      "whenToStop": ["Nagsugod na nga moginhawa og normal ang bata o naay timailhan sa kinabuhi.", "Miabot na ang mga responder ug nagkontrol na.", "Sobra na ka kapoy aron ipadayon nga luwas.", "Nahimong peligroso ang lugar."]
+    },
+    "infant": {
+      "title": "CPR para sa Masuso",
+      "ageRange": "Wala pay 1 anyos",
+      "checkResponsiveness": ["Kilhoti ang lapalapa sa tiil o tapika og hinay ug singgit aron susihon ang tubag.", "Susiha kung normal ang pagginhawa sa masuso — tan-awa ang paglihok sa dughan.", "Kung walay tubag ug dili normal ang pagginhawa, tawag dayon sa 911."],
+      "handPosition": "Gamit og duha ka tudlo (dili palad), ibutang diyutay ilalom sa linya sa suso, sa tunga sa dughan.",
+      "compressionDepth": "Mga 4 cm (1.5 pulgada), o mga usa-ka-tulo nga bahin sa giladmon sa dughan.",
+      "compressionRate": "100-120 ka compressions matag minuto.",
+      "cycleInstructions": ["Gamit og duha ka tudlo aron ituklod og lig-on, tugoti nga mobalik og bug-os ang dughan taliwala sa mga compression.", "Human sa 30 ka compressions, hatagi og 2 ka hinay nga rescue breath kung bansay niini (taboni ang baba ug ilong sa masuso gamit ang imong baba).", "Kung dili bansay o dili komportable maghatag og breaths, padayon ang hinay nga compressions nga walay hunong.", "Usba-usba ang cycle sa 30 ka compressions ug 2 ka breaths hangtod moabot ang tabang."],
+      "whenToStop": ["Nagsugod na nga moginhawa og normal ang masuso o naay timailhan sa kinabuhi.", "Miabot na ang mga responder ug nagkontrol na.", "Sobra na ka kapoy aron ipadayon nga luwas.", "Nahimong peligroso ang lugar."]
+    }
+  },
+  "common": {
+    "yes": "OO",
+    "no": "DILI",
+    "call911": "Tawag sa 911 Karon",
+    "guidanceComplete": "Human na ang giya. Padayon sa pagbantay hangtod moabot ang tabang.",
+    "before": "Sa Wala Pa", "during": "Samtang", "after": "Human", "firstAid": "First Aid",
+    "warningSigns": "⚠️ Mga Pasidaan", "doNot": "🚫 Ayaw Buhata", "firstAidSteps": "✅ Mga Lakang sa First Aid", "call911If": "📞 Tawag sa 911 Kung:",
+    "checkResponsiveness": "1. Susiha ang Tubag", "handPosition": "2. Posisyon sa Kamot",
+    "depth": "Giladmon", "rate": "Kapaspason", "compressionCycle": "3. Ikot sa Compression ({{compressions}}:{{breaths}})",
+    "compressionTimer": "Compression Timer", "whenToStop": "🛑 Kanus-a Mohunong",
+    "next": "Sunod"
+  },
+  "medicalEmergency": { "title": "Medikal nga Emergency" },
+  "cprGuide": {
+    "title": "Giya sa CPR",
+    "subtitle": "Pilia ang tama nga giya base sa edad sa tawo."
+  },
+  "disasterPreparedness": {
+    "title": "Pagpangandam sa Katalagman",
+    "emergencyKit": "Emergency Kit"
+  },
+  "emergency": {
+    "title": "Dali nga Akses",
+    "emergencyAssistant": "Emergency Assistant",
+    "guidedDecisionSupport": "Giya sa Pagdesisyon"
+  },
+  "cpr2": {
+    "title": "Giya sa CPR",
+    "adult": "Hamtong",
+    "child": "Bata",
+    "infant": "Sanggol"
+  },
+  "disaster": {
+    "title": "Pagpangandam sa Kalamidad",
+    "discription1": "Sa Dili Pa",
+    "discription2": "Atol",
+    "discription3": "Human"
+  },
+  "emergency2": {
+    "title": "Mga Emergency Contact",
+    "description": "911 • Pulis • Bombero"
+  },
+  "homeView": {
+    "description": "Offline nga Giya sa mga Emerhensiya",
+    "cardSupport": "Pindota kung adunay emerhensiya",
+    "title": "Dali nga Akses"
+  },
+  "panic": {
+    "title": "🚨 Emergency Assistant",
+    "description": "Pilia ang klase sa emerhensiya aron makadawat og sunod-sunod nga giya.",
+    "card1Title": "Medikal nga Emerhensiya",
+    "card1Description": "Nabuk-an sa tutunlan, pagdugo, paso, bali, atake sa kasingkasing, stroke, ug uban pa.",
+    "card2Title": "Emerhensiya sa Kalamidad",
+    "card2Description": "Bagyo, baha, linog, sunog, pagbuto sa bulkan, ug uban pa."
+  },
+  "settingsAbout": {
+  "title": "BAHIN SA",
+  "text": "Bahin sa ResQ PH",
+  "description": "Ang ResQ PH usa ka offline nga emergency decision support app nga gihimo isip Nursing Informatics capstone project. Bersyon 1.0.0.",
+  "version": "Bersyon 1.0.0",
+  "developer": "Gipalambo sa ResQ-PH Team"
+},
+"settingsDisclaimer": {
+  "title": "PASIUNA",
+  "text": "Pasidaan",
+  "description": "Kini nga app naghatag lamang og kinatibuk-ang kahibalo sa first aid base sa giya sa WHO, Philippine Red Cross, DOH, ug AHA. Dili kini kapuli sa propesyonal nga medikal nga pag-atiman. Kanunay tawag sa 911 kung adunay tinuod nga emerhensiya."
+},
+"settingsReset": {
+  "title": "I-RESET ANG TANANG DATA",
+  "text": "I-reset ang Tanang Data",
+  "description": "Sigurado ba ka nga gusto nimong i-reset ang tanang data? Dili na kini mahimong maibalik.",
+  "confirm": "Oo, I-reset",
+  "cancel": "Kanselahon"
+},
+"settingsLanguage": {
+  "text": "Pinulongan",
+  "optionTitle": "Pilia ang Pinulongan"
+}
+}

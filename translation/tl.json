@@ -1,0 +1,376 @@
+{
+  "contacts": {
+    "title": "Mga Emergency Contact",
+    "nationalHotlines": "Pambansang Hotline",
+    "myContacts": "Aking mga Contact",
+    "noContacts": "Wala pang naidagdag na contact.",
+    "addContact": "Magdagdag ng Contact",
+    "namePlaceholder": "Pangalan",
+    "phonePlaceholder": "Numero ng Telepono",
+    "save": "I-save",
+    "cancel": "Kanselahin",
+    "errorRequired": "Kinakailangan ang pangalan at numero ng telepono.",
+    "errorInvalidPhone": "May hindi wastong karakter ang numero ng telepono.",
+    "categories": {
+      "family": "Pamilya",
+      "doctor": "Doktor",
+      "barangay": "Barangay",
+      "hospital": "Ospital",
+      "other": "Iba pa"
+    },
+    "callAccessibility": "Tawagan si {{name}}",
+    "deleteAccessibility": "Burahin si {{name}}"
+  },
+  "hotlines": {
+    "nationalEmergency": "Pambansang Emergency Hotline",
+    "pnp": "Pambansang Pulisya ng Pilipinas",
+    "bfp": "Kagawaran ng Bumbero",
+    "redCross": "Philippine Red Cross",
+    "ndrrmc": "NDRRMC"
+  },
+  "tabs": {
+    "home": "Home",
+    "panic": "Panic",
+    "settings": "Setting"
+  },
+  "medical": {
+    "bleeding": {
+      "title": "Pagdurugo",
+      "warningSigns": ["Nakikitang sugat na dumudugo", "Basang-basa ang tela sa dugo"],
+      "doNot": ["Huwag alisin ang nakatusok na bagay.", "Huwag alisin ang basang tela — magdagdag na lamang sa ibabaw."],
+      "whenToCall911": ["Hindi tumitigil ang dugo pagkalipas ng 10 minutong pagpindot.", "Umaagos ang dugo na parang sumisirit (posibleng arterya ang nasugatan).", "May mga senyales ng shock ang tao (maputla, malamig, nalilito)."],
+      "tree": {
+        "q1": "Sumisirit ba o pulsadong lumalabas ang dugo?",
+        "i1": "Maaaring nasugatan ang arterya. Tumawag sa 911 ngayon at pindutin nang matatag ang sugat gamit ang malinis na tela nang hindi ito inaalis.",
+        "i2": "Maghugas ng kamay kung maaari, pagkatapos ay pindutin nang matatag ang sugat gamit ang malinis na tela.",
+        "i3": "Kung maaari, itaas ang nasugatang bahagi nang mas mataas sa puso habang nananatili ang pagpindot.",
+        "q2": "Tumigil na ba ang pagdurugo pagkalipas ng humigit-kumulang 10 minutong tuloy-tuloy na pagpindot?",
+        "i4": "Ibendahe ang sugat nang mahigpit ngunit hindi masyadong masikip. Magpatingin sa doktor para sa tamang check-up.",
+        "i5": "Ipagpatuloy ang pagpindot at magdagdag ng tela sa ibabaw. Tumawag sa 911 ngayon kung hindi pa tinatawagan."
+      }
+    },
+    "burn": {
+      "title": "Paso",
+      "warningSigns": ["Pamumula o paglobo ng balat", "Sakit sa napasong bahagi"],
+      "doNot": ["Huwag maglagay ng yelo, mantikilya, o toothpaste.", "Huwag butasin ang paltos."],
+      "whenToCall911": ["Malaki, malalim, o nasa mukha/kamay/ari ang paso.", "Puti, makapal, o sunog na parang katad ang balat.", "Dulot ng kemikal o kuryente ang paso."],
+      "tree": {
+        "q1": "Malaki, malalim, o nasa mukha, kamay, o ari ba ang paso?",
+        "i1": "Tumawag sa 911 ngayon. Habang naghihintay, palamigin ang paso sa malamig na tumatakbong tubig sa loob ng 10-20 minuto.",
+        "i2": "Palamigin ang paso sa malamig (hindi sobrang lamig) na tumatakbong tubig sa loob ng 10-20 minuto.",
+        "i3": "Alisin ang masisikip na bagay tulad ng singsing o alahas malapit sa paso bago pa ito mamaga.",
+        "i4": "Takpan nang maluwag gamit ang malinis at tuyong tela. Huwag maglagay ng yelo, mantikilya, o unguwento."
+      }
+    },
+    "electric-shock": {
+      "title": "Naeletrik",
+      "warningSigns": ["Paso sa bahaging nahawakan", "Pagkawala ng malay", "Hindi pantay na paghinga"],
+      "doNot": ["Huwag hawakan ang tao habang nakadikit pa ito sa pinagmulan ng kuryente.", "Huwag gumamit ng tubig malapit sa buhay na kuryente."],
+      "whenToCall911": ["Anumang pagkakaeletrik mula sa mataas na boltahe.", "Walang malay o hindi normal ang paghinga ng tao.", "May nakikitang paso sa pinasukan/pinalabasan."],
+      "tree": {
+        "q1": "Nakadikit pa ba ang tao sa pinagmulan ng kuryente?",
+        "i1": "HUWAG siyang hawakan. Patayin ang kuryente, o gumamit ng tuyo at hindi konduktor na bagay para ihiwalay siya rito.",
+        "q2": "Normal ba ang paghinga ng tao?",
+        "i2": "Tumawag sa 911. Takpan ang anumang nakikitang paso gamit ang malinis at tuyong tela at bantayan siya nang mabuti hanggang dumating ang tulong.",
+        "i3": "Tumawag sa 911 ngayon at simulan agad ang CPR (tingnan ang CPR Guide)."
+      }
+    },
+    "snake-bite": {
+      "title": "Kagat ng Ahas",
+      "warningSigns": ["Butas na marka", "Pamamaga at sakit", "Pagduduwal o hirap sa paghinga"],
+      "doNot": ["Huwag hiwain ang sugat o subukang sipsipin ang lason.", "Huwag maglagay ng masikip na tourniquet.", "Huwag subukang hulihin o patayin ang ahas."],
+      "whenToCall911": ["Anumang kagat ng ahas — ituring itong emergency.", "Hirap huminga o lumunok.", "Mabilis na pamamaga o matinding sakit."],
+      "tree": {
+        "i1": "Tumawag sa 911 ngayon — ituring na emergency ang bawat kagat ng ahas.",
+        "i2": "Panatilihing kalmado at hindi gumagalaw ang tao para mabagal ang pagkalat ng lason.",
+        "i3": "Panatilihing mas mababa sa puso ang kinagat na bahagi. Alisin ang masisikip na damit o alahas malapit sa kagat bago ito mamaga.",
+        "q1": "Nahihirapan ba ang tao huminga o lumunok?",
+        "i4": "Seryoso ito — siguraduhing natawagan na ang 911 at bantayan nang mabuti ang paghinga hanggang dumating ang tulong.",
+        "i5": "Maluwag na itali ang kinagat na bahagi gamit ang splint kung maaari at agad na dalhin sa ospital."
+      }
+    },
+    "poisoning": {
+      "title": "Pagkalason",
+      "warningSigns": ["Pagsusuka, pagkalito, o pagkaantok", "Paso sa paligid ng bibig", "Kakaibang amoy ng hininga"],
+      "doNot": ["Huwag pasukahin maliban kung inutusan ng poison control professional.", "Huwag bigyan ng anumang inumin o pagkain kung walang malay ang tao."],
+      "whenToCall911": ["Walang malay o nahihirapang huminga ang tao.", "Kilala o pinaghihinalaang nakalunok ng nakakalasong bagay.", "Pagkakaroon ng seizure pagkatapos ma-expose."],
+      "tree": {
+        "q1": "Malay at nakakatugon ba ang tao?",
+        "i1": "Ilayo siya sa pinagmulan ng lason. Itago ang lalagyan o sangkap para maipakita sa responders.",
+        "q2": "Nasa balat o mata ba ang lason (hindi nilunok)?",
+        "i2": "Alisin ang kontaminadong damit at banlawan ang balat o mata ng malinis na tubig sa loob ng 15-20 minuto.",
+        "i4": "Tumawag sa 911 o poison control center ngayon. Huwag pasukahin maliban kung inutusan ng propesyonal.",
+        "i3": "Tumawag agad sa 911. Ilagay siya sa recovery position kung humihinga, at bantayan nang mabuti."
+      }
+    },
+    "fracture": {
+      "title": "Bali",
+      "warningSigns": ["Baluktot o namamagang bahagi", "Matinding sakit", "Hindi magalaw ang bahaging ito"],
+      "doNot": ["Huwag subukang itwid o ayusin ang buto.", "Huwag ilipat ang tao maliban kung kinakailangan para sa kaligtasan."],
+      "whenToCall911": ["Nakikitang lumalabas ang buto sa balat.", "Malamig, maputla, o namamanhid ang bahagi sa ibaba ng sugat.", "Pinaghihinalaang may pinsala sa gulugod, leeg, o ulo."],
+      "tree": {
+        "q1": "Nakikita bang lumalabas ang buto, o malamig, maputla, o namamanhid ba ang bahagi?",
+        "i1": "Tumawag sa 911 ngayon. Huwag subukang itwid ang buto — panatilihing hindi gumagalaw ang bahagi hanggang dumating ang tulong.",
+        "i2": "Panatilihing hindi gumagalaw ang nasugatang bahagi. Suportahan ang bahagi sa itaas at ibaba ng sugat.",
+        "i3": "Maglagay ng splint gamit ang matigas na bagay at padding kung magagawa nang ligtas, at maglagay ng yelong nakabalot sa tela para mabawasan ang pamamaga."
+      }
+    },
+    "heat-stroke": {
+      "title": "Heat Stroke",
+      "warningSigns": ["Mataas na temperatura ng katawan", "Mainit, tuyo o namumulang balat", "Pagkalito o pagkawala ng malay"],
+      "doNot": ["Huwag bigyan ng inumin ang taong walang malay.", "Huwag gumamit ng sobrang lamig na tubig — palamigin nang unti-unti."],
+      "whenToCall911": ["Sobrang init ng katawan kapag nahawakan.", "Nalilito, nawawalan ng malay, o may seizure ang tao.", "Walang pagbuti kahit nilalamigan na."],
+      "tree": {
+        "q1": "Nalilito, walang malay, o may seizure ba ang tao?",
+        "i1": "Tumawag sa 911 ngayon. Ilipat siya sa malamig at maliliman na lugar at simulan ang paglamig gamit ang malamig na tubig habang naghihintay.",
+        "i2": "Ilipat agad siya sa malamig at maliliman na lugar at alisin ang sobrang damit.",
+        "i3": "Palamigin ang katawan gamit ang malamig na tubig, pamamaypay, o basang tela. Maglagay ng cool pack sa leeg, kilikili, at singit.",
+        "q2": "Bumubuti ba ang tao pagkatapos ng ilang minutong paglamig?",
+        "i4": "Ipagpatuloy ang paglamig at bigyan ng kaunting malamig na tubig kung malay. Ipagpatuloy ang pagbabantay sa paghinga at kamalayan."
+      }
+    },
+    "drowning": {
+      "title": "Nalunod",
+      "warningSigns": ["Naisagip mula sa tubig na hindi normal ang paghinga", "Ubo, nasusukal, o walang malay"],
+      "doNot": ["Huwag pumasok sa malalim o mabilis na daloy ng tubig maliban kung sanay.", "Huwag ipagpaliban ang paggawa ng rescue breathing/CPR para lang paagusin ang tubig sa baga."],
+      "whenToCall911": ["Anumang malapit-nang-malunod na insidente — magpatingin palagi sa doktor.", "Hindi humihinga o walang malay ang tao.", "Tuloy-tuloy na ubo o hirap huminga pagkatapos maisagip."],
+      "tree": {
+        "i1": "Ligtas na alisin ang tao sa tubig. Huwag pumasok sa malalim o mabilis na tubig maliban kung sanay.",
+        "q1": "Humihinga ba ang tao?",
+        "i2": "Tumawag sa 911 para sa pagpapatingin. Ilagay siya sa recovery position, panatilihing mainit, at bantayan nang mabuti — maaaring magkaroon ng komplikasyon pagkatapos ma-rescue.",
+        "i3": "Tumawag sa 911 ngayon at simulan agad ang CPR (tingnan ang CPR Guide). Huwag ipagpaliban ang CPR para lang paagusin ang tubig sa baga."
+      }
+    },
+    "fainting": {
+      "title": "Pagkahimatay",
+      "warningSigns": ["Biglaang maikling pagkawala ng malay", "Maputla at pinagpapawisang balat bago mahimatay"],
+      "doNot": ["Huwag bigyan ng pagkain o inumin agad pagkatapos mahimatay.", "Huwag pilitin ang tao na umupo o tumayo nang mabilis."],
+      "whenToCall911": ["Hindi nagkakamalay ang tao sa loob ng isang minuto.", "May kasamang sakit sa dibdib, hindi regular na tibok ng puso, o pinsala mula sa pagkahulog.", "Paulit-ulit na pagkahimatay."],
+      "tree": {
+        "i1": "Ihiga nang patag ang tao at itaas ang mga binti nang mga 12 pulgada. Luwagan ang masikip na damit sa leeg.",
+        "q1": "Nagkamalay ba siya sa loob ng humigit-kumulang isang minuto?",
+        "i2": "Tulungan siyang umupo nang dahan-dahan kapag malay na. Siguraduhing may sariwang hangin at espasyo sa paligid niya.",
+        "i3": "Tumawag sa 911 ngayon — kailangan ng agarang atensyong medikal."
+      }
+    },
+    "asthma-attack": {
+      "title": "Atake ng Hika",
+      "warningSigns": ["Sipol o paghingal sa paghinga", "Kakapusan ng hininga", "Paninikip ng dibdib"],
+      "doNot": ["Huwag hayaang humiga nang patag — panatilihing nakaupo.", "Huwag siyang iwanang mag-isa."],
+      "whenToCall911": ["Walang pagbuti pagkatapos gumamit ng inhaler.", "Namumula o namumutlang bughaw ang labi o daliri.", "Hindi makapagsalita nang buo ang tao o pagod na sa paghinga."],
+      "tree": {
+        "i1": "Tulungan ang tao na umupo nang tuwid at manatiling kalmado. Huwag hayaang humiga nang patag.",
+        "q1": "May dalang reliever inhaler ba siya?",
+        "i2": "Tulungan siyang gamitin ang kanyang inhaler at hikayatin ang mabagal at matatag na paghinga.",
+        "q2": "Bumubuti ba siya pagkatapos gamitin ang inhaler?",
+        "i3": "Ipagpatuloy ang pagbabantay at bigyan ng ulit-ulit na dosis ng inhaler ayon sa kanyang action plan kung babalik ang sintomas.",
+        "i4": "Tumawag sa 911 ngayon. Panatilihin siyang nakaupo at kalmado hanggang dumating ang tulong."
+      }
+    },
+    "choking": {
+      "title": "Nabulunan",
+      "warningSigns": ["Hinahawakan ang lalamunan", "Hindi makapagsalita, makaubo, o makahinga"],
+      "doNot": ["Huwag gumawa ng abdominal thrusts kung kaya pa niyang umubo o magsalita."],
+      "whenToCall911": ["Hindi malabas ang bagay na nakabara.", "Nawalan ng malay ang tao."],
+      "tree": {
+        "q1": "Kaya ba niyang umubo, magsalita, o huminga?",
+        "i1": "Hikayatin siyang patuloy na umubo nang malakas. Manatili sa kanya at bantayan nang mabuti.",
+        "q2": "Nalabas ba ang bagay at normal na ba ang paghinga niya ngayon?",
+        "i3": "Mabuti. Ipagpatuloy ang pagbabantay at magpatingin sa doktor kung magpapatuloy ang kakaibang pakiramdam.",
+        "i2": "Bigyan siya ng 5 matatag na back blow sa pagitan ng mga balikat gamit ang puson ng iyong kamay.",
+        "i4": "Kung hindi gumana iyon, gumawa ng 5 abdominal thrusts (Heimlich maneuver): tumayo sa likuran niya, ilagay ang kamao sa itaas ng pusod, itulak pasulong at pataas.",
+        "q3": "Nalabas na ba ang bagay at humihinga na ba siya ngayon?",
+        "i5": "Ipagpatuloy ang pag-alternate ng 5 back blow at 5 abdominal thrust. Tumawag sa 911 ngayon kung hindi pa tinatawagan."
+      }
+    },
+    "heart-attack": {
+      "title": "Atake sa Puso",
+      "warningSigns": ["Sakit o bigat sa dibdib", "Sakit na kumakalat sa braso, panga, o likod", "Kakapusan ng hininga, malamig na pawis"],
+      "doNot": ["Huwag hayaang magpumilit ang tao.", "Huwag bigyan ng pagkain o inumin."],
+      "whenToCall911": ["Anumang pinaghihinalaang atake sa puso — tumawag agad."],
+      "tree": {
+        "q1": "Malay at nakakatugon ba ang tao?",
+        "i1": "Tumawag agad sa 911. Paupuin ang tao, magpahinga, at manatiling kalmado.",
+        "q2": "May dalang reseta na gamot sa puso (hal. aspirin) ba ang tao?",
+        "i2": "Tulungan siyang inumin ang kanyang reseta na gamot ayon sa direksyon. Ipagpatuloy ang pagbabantay hanggang dumating ang tulong.",
+        "i4": "Luwagan ang masikip na damit at panatilihin siyang kalmado at hindi gumagalaw hanggang dumating ang responders.",
+        "i3": "Suriin ang paghinga. Kung hindi normal ang paghinga, simulan agad ang CPR (tingnan ang CPR Guide) at tumawag sa 911."
+      }
+    },
+    "stroke": {
+      "title": "Stroke",
+      "warningSigns": ["Baluktot na mukha", "Panghihina ng braso", "Hirap magsalita"],
+      "doNot": ["Huwag bigyan ng pagkain, inumin, o gamot.", "Huwag hayaang siya mismo ang magmaneho."],
+      "whenToCall911": ["Anumang pinaghihinalaang stroke — kritikal ang oras, tumawag agad."],
+      "tree": {
+        "q1": "Pasenyumin siya — baluktot ba ang isang bahagi ng mukha?",
+        "q2": "Paitaasin ang dalawang braso niya — bumababa ba ang isang braso?",
+        "q3": "Paulitin sa kanya ang isang simpleng pangungusap — malabo o kakaiba ba ang pagsasalita?",
+        "i1": "Ito ay mga senyales ng posibleng stroke. Tumawag agad sa 911 at itala ang oras na nagsimula ang mga sintomas.",
+        "i3": "Panatilihin siyang kalmado, nakaupo o nakahiga na bahagyang nakataas ang ulo. Huwag bigyan ng pagkain, inumin, o gamot. Bantayan ang paghinga hanggang dumating ang tulong.",
+        "i2": "Walang malinaw na senyales na nakita, ngunit kung pinaghihinalaan mo pa rin ang stroke, tumawag sa 911 at magpatingin agad sa doktor."
+      }
+    },
+    "seizure": {
+      "title": "Seizure",
+      "warningSigns": ["Biglaang pangingisay o pagkatigas", "Pagkawala ng kamalayan", "Kakaibang pagkislot"],
+      "doNot": ["Huwag hawakan o pigilan ang paggalaw ng tao.", "Huwag maglagay ng anumang bagay sa kanyang bibig."],
+      "whenToCall911": ["Higit sa 5 minuto ang tagal ng seizure.", "Hindi nagkakamalay ang tao pagkatapos.", "Ito ang kanyang unang kilalang seizure."],
+      "tree": {
+        "i1": "Linisin ang paligid sa matigas o matulis na bagay. Huwag siya pigilan.",
+        "i2": "Lagyan ng malambot na bagay ang ilalim ng ulo niya. Timplahin ang oras ng seizure.",
+        "q1": "Higit sa 5 minuto na ba ang seizure?",
+        "i3": "Tumawag sa 911 ngayon — kailangan ng emergency care ang matagal na seizure.",
+        "q2": "Tumigil na ba ang pangingisay?",
+        "i4": "Dahan-dahang ihiga siya sa kanyang tagiliran (recovery position) para manatiling bukas ang daanan ng hangin. Manatili sa kanya hanggang lubos siyang magising."
+      }
+    }
+  },
+  "disasters": {
+    "typhoon": {
+      "title": "Bagyo",
+      "before": ["Bantayan ang mga weather advisory.", "Ihanda ang Go Bag.", "I-charge ang mga telepono.", "Mag-imbak ng pagkain at tubig.", "I-waterproof ang mahahalagang dokumento."],
+      "during": ["Manatili sa loob ng bahay.", "Lumayo sa mga bintana.", "Makinig sa mga opisyal na anunsyo.", "Lumikas agad kung inutusan."],
+      "after": ["Iwasan ang baha.", "Siyasatin ang inyong bahay.", "I-report ang mga panganib.", "Ipagpatuloy ang pagmonitor ng mga advisory."],
+      "firstAid": ["Gamutin ang mga sugat gamit ang malinis na tubig at antiseptiko.", "Bantayan ang mga senyales ng hypothermia kung basa at malamig.", "Huwag hawakan ang nahulog na power lines o basang kagamitang de-koryente."]
+    },
+    "flood": {
+      "title": "Baha",
+      "before": ["Alamin ang panganib ng baha sa inyong lugar at mga ruta ng paglikas.", "Ilipat ang mahahalagang bagay at dokumento sa mas mataas na lugar.", "Ihanda ang Go Bag malapit sa pintuan.", "Maghanda ng battery-powered radio."],
+      "during": ["Lumipat agad sa mas mataas na lugar.", "Iwasan ang paglakad o pagmamaneho sa baha.", "Patayin ang kuryente sa main breaker kung ligtas gawin.", "Iwasan ang pakikipag-ugnayan sa tubig-baha — maaaring kontaminado ito."],
+      "after": ["Iwasang bumalik sa bahay hanggang idineklara itong ligtas ng awtoridad.", "Huwag uminom ng gripong tubig hanggang makumpirma na ligtas ito.", "Itapon ang pagkaing nadikit sa tubig-baha.", "Bantayan ang mahihinang istruktura at nakatagong debris."],
+      "firstAid": ["Linisin nang mabuti ang mga sugat para maiwasan ang impeksyon mula sa kontaminadong tubig.", "Bantayan ang mga sintomas ng sakit na dulot ng tubig (lagnat, pagtatae).", "Magpatingin agad para sa mga sugat na na-expose sa tubig-baha."]
+    },
+    "earthquake": {
+      "title": "Lindol",
+      "before": ["Tukuyin ang ligtas na lugar sa bawat kwarto (ilalim ng matibay na mesa).", "I-secure ang mabibigat na kasangkapan sa dingding.", "Ihanda ang Go Bag at itakda ang lugar-pagkikitaan ng pamilya.", "Magsanay ng Duck, Cover, and Hold On."],
+      "during": ["Duck, Cover, and Hold On.", "Lumayo sa mga bintana at mabibigat na kasangkapan.", "Kung nasa labas, pumunta sa bukas na lugar na malayo sa mga gusali.", "Kung nagmamaneho, tumigil sa gilid at manatili sa loob ng sasakyan."],
+      "after": ["Suriin ang sarili at iba pa kung may sugat.", "Asahan ang mga aftershock.", "Suriin muna ang tagas ng gas at pinsala sa istruktura bago pumasok muli.", "Iwasan ang paggamit ng elevator."],
+      "firstAid": ["Kontrolin ang pagdurugo gamit ang direktang pagpindot ng malinis na tela.", "Huwag ilipat ang taong pinaghihinalaang may pinsala sa gulugod maliban kung may agarang panganib.", "Gamutin ang shock: panatilihing mainit at nakahiga ang tao kung maaari."]
+    },
+    "fire": {
+      "title": "Sunog",
+      "before": ["I-install at subukan ang mga smoke detector.", "Magplano at magsanay ng ruta ng paglikas mula sa sunog.", "Maglagay ng fire extinguisher na madaling makuha.", "Iwasan ang labis na pagkarga ng outlet."],
+      "during": ["Yumuko at umalis — gumapang sa ilalim ng usok.", "Pakiramdaman ang pinto bago buksan; huwag buksan kung mainit.", "Stop, Drop, and Roll kung nagliliyab ang damit.", "Huwag gamitin ang elevator kapag may sunog."],
+      "after": ["Huwag bumalik sa gusali hanggang idineklara itong ligtas ng bumbero.", "Magpatingin sa propesyonal para sa pinsala sa istruktura.", "I-dokumento ang pinsala para sa insurance bago maglinis."],
+      "firstAid": ["Palamigin ang paso sa malamig (hindi sobrang lamig) na tumatakbong tubig sa loob ng 10-20 minuto.", "Huwag maglagay ng unguwento, mantikilya, o yelo sa paso.", "Takpan nang maluwag ang paso gamit ang malinis at tuyong tela at magpatingin sa doktor."]
+    },
+    "volcanic-eruption": {
+      "title": "Pagputok ng Bulkan",
+      "before": ["Alamin ang layo ninyo sa pinakamalapit na aktibong bulkan at mga evacuation zone.", "Maghanda ng N95 mask at goggles para sa abo.", "Ihanda ang Go Bag at alamin ang mga ruta ng paglikas.", "Bantayan ang mga advisory ng PHIVOLCS."],
+      "during": ["Lumikas agad kung inutusan ng awtoridad.", "Magsuot ng mask at goggles para maprotektahan laban sa abo.", "Manatili sa loob na nakasara ang bintana at pinto kung hindi lumilikas.", "Iwasan ang mga lambak ng ilog at mababang lugar dahil sa panganib ng lahar."],
+      "after": ["Linisin ang abo sa bubong para maiwasan ang pagguho.", "Ipagpatuloy ang pagsusuot ng mask sa labas hanggang mahupa ang abo.", "Iwasan ang pagmamaneho sa malakas na pag-ulan ng abo — nakakabawas ito ng visibility at nakakasira ng makina.", "Ipagpatuloy ang pagbantay sa mga advisory ng PHIVOLCS para sa babala ng lahar."],
+      "firstAid": ["Banlawan ang mga mata at balat na na-expose sa abo gamit ang malinis na tubig.", "Takpan ang ilong at bibig para maiwasan ang paglanghap ng abo.", "Magpatingin sa doktor para sa hirap huminga, lalo na para sa mga may hika."]
+    }
+  },
+  "cpr": {
+    "adult": {
+      "title": "CPR para sa Matanda",
+      "ageRange": "Mga matanda at teenager (puberty pataas)",
+      "checkResponsiveness": ["Tapikin nang malakas ang balikat niya at sumigaw, \"Okay ka lang ba?\"", "Suriin kung normal ang paghinga — tingnan ang paggalaw ng dibdib.", "Kung walang tugon at hindi normal ang paghinga, tumawag agad sa 911."],
+      "handPosition": "Ilagay ang sakong ng isang kamay sa gitna ng dibdib, ang isa pang kamay sa ibabaw nito, magkadaop ang mga daliri.",
+      "compressionDepth": "Mga 5-6 cm (2 pulgada) ang lalim.",
+      "compressionRate": "100-120 compressions kada minuto.",
+      "cycleInstructions": ["Itulak nang malakas at mabilis sa gitna ng dibdib, hayaang bumalik nang buo ang dibdib sa pagitan ng mga compression.", "Pagkatapos ng 30 compressions, magbigay ng 2 rescue breath kung sanay gumawa nito (iangat ang ulo, pisilin ang ilong, huminga hanggang tumaas ang dibdib).", "Kung hindi sanay o hindi komportable magbigay ng breaths, ipagpatuloy ang hands-only compressions nang walang tigil.", "Ulitin ang cycle ng 30 compressions at 2 breaths hanggang dumating ang tulong."],
+      "whenToStop": ["Nagsisimula nang huminga nang normal ang tao o may senyales ng buhay.", "Dumating na ang mga responder at kumuha na ng kontrol.", "Sobra ka nang napagod para ipagpatuloy nang ligtas.", "Naging mapanganib na ang lugar."]
+    },
+    "child": {
+      "title": "CPR para sa Bata",
+      "ageRange": "Edad 1 taon hanggang puberty",
+      "checkResponsiveness": ["Tapikin ang balikat niya at sumigaw ng pangalan niya o \"Okay ka lang ba?\"", "Suriin kung normal ang paghinga — tingnan ang paggalaw ng dibdib.", "Kung walang tugon at hindi normal ang paghinga, tumawag agad sa 911."],
+      "handPosition": "Gumamit ng isa o dalawang kamay (kung alin ang nagbibigay ng sapat na lalim) sa gitna ng dibdib.",
+      "compressionDepth": "Mga 5 cm (2 pulgada), o mga isang-katlo ng lalim ng dibdib.",
+      "compressionRate": "100-120 compressions kada minuto.",
+      "cycleInstructions": ["Itulak nang matatag sa gitna ng dibdib, hayaang bumalik nang buo ang dibdib sa pagitan ng mga compression.", "Pagkatapos ng 30 compressions, magbigay ng 2 rescue breath kung sanay gumawa nito.", "Kung hindi sanay o hindi komportable magbigay ng breaths, ipagpatuloy ang hands-only compressions nang walang tigil.", "Ulitin ang cycle ng 30 compressions at 2 breaths hanggang dumating ang tulong."],
+      "whenToStop": ["Nagsisimula nang huminga nang normal ang bata o may senyales ng buhay.", "Dumating na ang mga responder at kumuha na ng kontrol.", "Sobra ka nang napagod para ipagpatuloy nang ligtas.", "Naging mapanganib na ang lugar."]
+    },
+    "infant": {
+      "title": "CPR para sa Sanggol",
+      "ageRange": "Wala pang 1 taong gulang",
+      "checkResponsiveness": ["Kalabitin ang talampakan o tapikin nang bahagya at sumigaw para suriin ang tugon.", "Suriin kung normal ang paghinga ng sanggol — tingnan ang paggalaw ng dibdib.", "Kung walang tugon at hindi normal ang paghinga, tumawag agad sa 911."],
+      "handPosition": "Gumamit ng dalawang daliri (hindi palad), ilagay sa ibaba lang ng linya ng utong, sa gitna ng dibdib.",
+      "compressionDepth": "Mga 4 cm (1.5 pulgada), o mga isang-katlo ng lalim ng dibdib.",
+      "compressionRate": "100-120 compressions kada minuto.",
+      "cycleInstructions": ["Gumamit ng dalawang daliri para itulak nang matatag, hayaang bumalik nang buo ang dibdib sa pagitan ng mga compression.", "Pagkatapos ng 30 compressions, magbigay ng 2 mahinahong rescue breath kung sanay gumawa nito (takpan ang bibig at ilong ng sanggol gamit ang inyong bibig).", "Kung hindi sanay o hindi komportable magbigay ng breaths, ipagpatuloy ang banayad na compressions nang walang tigil.", "Ulitin ang cycle ng 30 compressions at 2 breaths hanggang dumating ang tulong."],
+      "whenToStop": ["Nagsisimula nang huminga nang normal ang sanggol o may senyales ng buhay.", "Dumating na ang mga responder at kumuha na ng kontrol.", "Sobra ka nang napagod para ipagpatuloy nang ligtas.", "Naging mapanganib na ang lugar."]
+    }
+  },
+  "common": {
+    "yes": "OO",
+    "no": "HINDI",
+    "call911": "Tumawag sa 911 Ngayon",
+    "guidanceComplete": "Tapos na ang gabay. Ipagpatuloy ang pagbabantay hanggang dumating ang tulong.",
+    "before": "Bago", "during": "Habang", "after": "Pagkatapos", "firstAid": "First Aid",
+    "warningSigns": "⚠️ Mga Babala", "doNot": "🚫 Huwag Gawin", "firstAidSteps": "✅ Mga Hakbang sa First Aid", "call911If": "📞 Tumawag sa 911 Kung:",
+    "checkResponsiveness": "1. Suriin ang Tugon", "handPosition": "2. Posisyon ng Kamay",
+    "depth": "Lalim", "rate": "Bilis", "compressionCycle": "3. Ikot ng Compression ({{compressions}}:{{breaths}})",
+    "compressionTimer": "Compression Timer", "whenToStop": "🛑 Kailan Titigil",
+    "next": "Susunod"
+  },
+  "medicalEmergency": { "title": "Medikal na Emergency" },
+  "cprGuide": {
+    "title": "Gabay sa CPR",
+    "subtitle": "Piliin ang tamang gabay batay sa edad ng tao."
+  },
+  "disasterPreparedness": {
+    "title": "Paghahanda sa Sakuna",
+    "emergencyKit": "Emergency Kit"
+  },
+  "emergency": {
+    "title": "Mabilis na Akses",
+    "emergencyAssistant": "Emergency Assistant",
+    "guidedDecisionSupport": "Gabay sa Pagdedesisyon"
+  },
+  "cpr2": {
+    "title": "Gabay sa CPR",
+    "adult": "Matanda",
+    "child": "Bata",
+    "infant": "Sanggol"
+  },
+  "disaster": {
+    "title": "Paghahanda sa Sakuna",
+    "discription1": "Bago",
+    "discription2": "Habang",
+    "discription3": "Pagkatapos"
+  },
+  "emergency2": {
+    "title": "Mga Emergency Contact",
+    "description": "911 • Pulis • Bumbero"
+  },
+  "homeView": {
+    "description": "Offline na Gabay sa mga Emerhensiya",
+    "cardSupport": "Pindutin kapag may emerhensiya",
+    "title": "Mabilis na Akses"
+  },
+  "panic": {
+    "title": "🚨 Emergency Assistant",
+    "description": "Piliin ang uri ng emerhensiya upang makatanggap ng sunud-sunod na gabay.",
+    "card1Title": "Medikal na Emerhensiya",
+    "card1Description": "Nabubulunan, pagdurugo, paso, bali, atake sa puso, stroke, at iba pa.",
+    "card2Title": "Sakunang Pang-emerhensiya",
+    "card2Description": "Bagyo, baha, lindol, sunog, pagputok ng bulkan, at iba pa."
+  },
+  "settingsAbout": {
+  "title": "TUNGKOL",
+  "text": "Tungkol sa ResQ PH",
+  "description": "Ang ResQ PH ay isang offline na emergency decision support app na ginawa bilang Nursing Informatics capstone project. Bersyon 1.0.0.",
+  "version": "Bersyon 1.0.0",
+  "developer": "Binuo ng ResQ-PH Team"
+},
+"settingsDisclaimer": {
+  "title": "PAUNAWA",
+  "text": "Paunawa",
+  "description": "Ang app na ito ay nagbibigay lamang ng pangkalahatang kaalaman sa first aid batay sa gabay ng WHO, Philippine Red Cross, DOH, at AHA. Hindi ito kapalit ng propesyonal na pangangalagang medikal. Laging tumawag sa 911 sa oras ng tunay na emerhensiya."
+},
+"settingsReset": {
+  "title": "I-RESET ANG DATA",
+  "text": "I-reset ang Lahat ng Data",
+  "description": "Sigurado ka bang gusto mong i-reset ang lahat ng data? Hindi na ito maaaring maibalik.",
+  "confirm": "Oo, I-reset",
+  "cancel": "Kanselahin"
+},
+"settingsLanguage": {
+  "text": "Wika",
+  "optionTitle": "Pumili ng Wika"
+}
+}

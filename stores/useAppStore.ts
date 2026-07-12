@@ -1,0 +1,61 @@
+/**
+ * Global app-level state: language, theme, and initialization status.
+ * Persisted values (language, theme) are saved to AsyncStorage so they
+ * survive app restarts without needing the database.
+ *
+ * LANGUAGE_STORAGE_KEY is exported so other files (splash screen,
+ * language selection screen) check/read the exact same key — never
+ * duplicate this string elsewhere, or the "has user picked a language"
+ * check will silently break.
+ */
+import { create } from "zustand";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+
+import type { LanguageCode } from "../types/i18n";
+
+interface AppState {
+  isAppReady: boolean;
+  language: LanguageCode;
+  isDarkMode: boolean;
+  setAppReady: (ready: boolean) => void;
+  setLanguage: (language: LanguageCode) => Promise<void>;
+  setDarkMode: (isDark: boolean) => Promise<void>;
+  hydrate: () => Promise<void>;
+}
+
+export const LANGUAGE_STORAGE_KEY = "@resqph/language";
+const DARK_MODE_STORAGE_KEY = "@resqph/darkMode";
+
+export const useAppStore = create<AppState>((set) => ({
+  isAppReady: false,
+  language: "en",
+  isDarkMode: false,
+
+  setAppReady: (ready) => set({ isAppReady: ready }),
+
+  setLanguage: async (language) => {
+    await AsyncStorage.setItem(LANGUAGE_STORAGE_KEY, language);
+    set({ language });
+  },
+
+  setDarkMode: async (isDark) => {
+    await AsyncStorage.setItem(DARK_MODE_STORAGE_KEY, String(isDark));
+    set({ isDarkMode: isDark });
+  },
+
+  /**
+   * Loads persisted preferences from AsyncStorage on app boot.
+   * Falls back to defaults if nothing has been stored yet (first launch).
+   */
+  hydrate: async () => {
+    const [storedLanguage, storedDarkMode] = await Promise.all([
+      AsyncStorage.getItem(LANGUAGE_STORAGE_KEY),
+      AsyncStorage.getItem(DARK_MODE_STORAGE_KEY),
+    ]);
+
+    set({
+      language: (storedLanguage as LanguageCode) ?? "en",
+      isDarkMode: storedDarkMode === "true",
+    });
+  },
+}));

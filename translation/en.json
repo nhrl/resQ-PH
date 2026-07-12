@@ -1,0 +1,376 @@
+{
+  "contacts": {
+    "title": "Emergency Contacts",
+    "nationalHotlines": "National Hotlines",
+    "myContacts": "My Contacts",
+    "noContacts": "No contacts added yet.",
+    "addContact": "Add Contact",
+    "namePlaceholder": "Name",
+    "phonePlaceholder": "Phone Number",
+    "save": "Save",
+    "cancel": "Cancel",
+    "errorRequired": "Name and phone number are required.",
+    "errorInvalidPhone": "Phone number contains invalid characters.",
+    "categories": {
+      "family": "Family",
+      "doctor": "Doctor",
+      "barangay": "Barangay",
+      "hospital": "Hospital",
+      "other": "Other"
+    },
+    "callAccessibility": "Call {{name}}",
+    "deleteAccessibility": "Delete {{name}}"
+  },
+  "hotlines": {
+    "nationalEmergency": "National Emergency Hotline",
+    "pnp": "Philippine National Police",
+    "bfp": "Bureau of Fire Protection",
+    "redCross": "Philippine Red Cross",
+    "ndrrmc": "NDRRMC"
+  },
+  "tabs": {
+    "home": "Home",
+    "panic": "Panic",
+    "settings": "Settings"
+  },
+  "medical": {
+  "bleeding": {
+    "title": "Bleeding",
+    "warningSigns": ["Visible wound with blood flow", "Blood soaking through cloth"],
+    "doNot": ["Do not remove an embedded object.", "Do not remove a soaked cloth — add more on top."],
+    "whenToCall911": ["Bleeding does not stop after 10 minutes of pressure.", "Blood is spurting (possible artery injury).", "Person shows signs of shock (pale, cold, confused)."],
+    "tree": {
+      "q1": "Is the blood spurting or shooting out in pulses?",
+      "i1": "This may be an artery injury. Call 911 now and apply firm direct pressure with a clean cloth without lifting it.",
+      "i2": "Wash your hands if possible, then apply firm direct pressure on the wound with a clean cloth.",
+      "i3": "If possible, raise the injured area above heart level while keeping pressure on.",
+      "q2": "Has the bleeding stopped after about 10 minutes of steady pressure?",
+      "i4": "Bandage the wound firmly but not too tight. Seek medical care for a proper check-up.",
+      "i5": "Keep applying pressure and add more cloth on top. Call 911 now if not already called."
+    }
+  },
+  "burn": {
+    "title": "Burn",
+    "warningSigns": ["Redness or blistering skin", "Pain at the burn site"],
+    "doNot": ["Do not apply ice, butter, or toothpaste.", "Do not pop blisters."],
+    "whenToCall911": ["Burn is large, deep, or on face/hands/genitals.", "Skin looks white, leathery, or charred.", "Burn was caused by chemicals or electricity."],
+    "tree": {
+      "q1": "Is the burn large, deep, or on the face, hands, or genitals?",
+      "i1": "Call 911 now. While waiting, cool the burn under cool running water for 10-20 minutes.",
+      "i2": "Cool the burn under cool (not ice-cold) running water for 10-20 minutes.",
+      "i3": "Remove tight items like rings or jewelry near the burn before swelling starts.",
+      "i4": "Cover loosely with a clean, dry, non-fluffy cloth. Do not apply ice, butter, or ointments."
+    }
+  },
+  "electric-shock": {
+    "title": "Electric Shock",
+    "warningSigns": ["Burns at contact points", "Unconsciousness", "Irregular breathing"],
+    "doNot": ["Do not touch the person while still in contact with the electrical source.", "Do not use water near live electricity."],
+    "whenToCall911": ["Any electric shock from a high-voltage source.", "Person is unconscious or not breathing normally.", "Visible burns at entry/exit points."],
+    "tree": {
+      "q1": "Is the person still in contact with the electrical source?",
+      "i1": "Do NOT touch them. Turn off the power source, or use a dry, non-conductive object to separate them from it.",
+      "q2": "Is the person breathing normally?",
+      "i2": "Call 911. Cover any visible burns with a clean, dry cloth and monitor them closely until help arrives.",
+      "i3": "Call 911 now and begin CPR immediately (see CPR Guide)."
+    }
+  },
+  "snake-bite": {
+    "title": "Snake Bite",
+    "warningSigns": ["Puncture marks", "Swelling and pain", "Nausea or difficulty breathing"],
+    "doNot": ["Do not cut the wound or try to suck out venom.", "Do not apply a tight tourniquet.", "Do not try to catch or kill the snake."],
+    "whenToCall911": ["Any snake bite — always treat as an emergency.", "Difficulty breathing or swallowing.", "Rapid swelling or severe pain."],
+    "tree": {
+      "i1": "Call 911 now — treat every snake bite as an emergency.",
+      "i2": "Keep the person calm and still to slow venom spread through the body.",
+      "i3": "Keep the bitten limb lower than the heart. Remove tight clothing or jewelry near the bite before swelling.",
+      "q1": "Is the person having trouble breathing or swallowing?",
+      "i4": "This is serious — ensure 911 has been called and monitor breathing closely until help arrives.",
+      "i5": "Loosely immobilize the limb with a splint if possible and transport to a hospital immediately."
+    }
+  },
+  "poisoning": {
+    "title": "Poisoning",
+    "warningSigns": ["Vomiting, confusion, or drowsiness", "Burns around the mouth", "Unusual breath odor"],
+    "doNot": ["Do not induce vomiting unless instructed by a poison control professional.", "Do not give anything by mouth if the person is unconscious."],
+    "whenToCall911": ["Person is unconscious or having difficulty breathing.", "Known or suspected ingestion of a toxic substance.", "Seizures following exposure."],
+    "tree": {
+      "q1": "Is the person conscious and responsive?",
+      "i1": "Move them away from the source of poison. Keep the container or substance to show responders.",
+      "q2": "Was the poison on the skin or in the eyes (not swallowed)?",
+      "i2": "Remove contaminated clothing and rinse the skin or eyes with clean water for 15-20 minutes.",
+      "i4": "Call 911 or a poison control center now. Do not induce vomiting unless a professional instructs you to.",
+      "i3": "Call 911 immediately. Place them in the recovery position if breathing, and monitor closely."
+    }
+  },
+  "fracture": {
+    "title": "Fracture",
+    "warningSigns": ["Deformity or swelling", "Severe pain", "Inability to move the limb"],
+    "doNot": ["Do not try to straighten or realign the bone.", "Do not move the person unless necessary for safety."],
+    "whenToCall911": ["Bone is visibly protruding through skin.", "Limb is cold, pale, or numb below the injury.", "Suspected spinal, neck, or head injury."],
+    "tree": {
+      "q1": "Is the bone visibly protruding, or is the limb cold, pale, or numb?",
+      "i1": "Call 911 now. Do not try to straighten the bone — keep the area as still as possible until help arrives.",
+      "i2": "Keep the injured area still. Support the limb above and below the injury.",
+      "i3": "Apply a splint using a rigid object and padding if you're able to do so safely, and apply ice wrapped in cloth to reduce swelling."
+    }
+  },
+  "heat-stroke": {
+    "title": "Heat Stroke",
+    "warningSigns": ["High body temperature", "Hot, dry or flushed skin", "Confusion or loss of consciousness"],
+    "doNot": ["Do not give fluids to an unconscious person.", "Do not use ice-cold water — cool gradually."],
+    "whenToCall911": ["Body temperature feels very high to the touch.", "Person becomes confused, unconscious, or has seizures.", "No improvement after cooling efforts."],
+    "tree": {
+      "q1": "Is the person confused, unconscious, or having seizures?",
+      "i1": "Call 911 now. Move them to a cool, shaded area and begin cooling with lukewarm water while waiting.",
+      "i2": "Move them to a cool, shaded area immediately and remove excess clothing.",
+      "i3": "Cool the body with lukewarm water, fanning, or damp cloths. Apply cool packs to neck, armpits, and groin.",
+      "q2": "Is the person improving after several minutes of cooling?",
+      "i4": "Continue cooling and give small sips of cool water if conscious. Keep monitoring breathing and alertness."
+    }
+  },
+  "drowning": {
+    "title": "Drowning",
+    "warningSigns": ["Person pulled from water not breathing normally", "Coughing, choking, or unconscious"],
+    "doNot": ["Do not enter deep or fast-moving water yourself unless trained.", "Do not delay starting rescue breathing/CPR to drain water from lungs."],
+    "whenToCall911": ["Any near-drowning incident — always seek medical evaluation.", "Person is not breathing or unconscious.", "Persistent coughing or difficulty breathing after rescue."],
+    "tree": {
+      "i1": "Remove the person from the water safely. Do not enter deep or fast-moving water unless trained.",
+      "q1": "Is the person breathing?",
+      "i2": "Call 911 for medical evaluation. Place them in the recovery position, keep them warm, and monitor closely — complications can develop after rescue.",
+      "i3": "Call 911 now and begin CPR immediately (see CPR Guide). Do not delay CPR to drain water from the lungs."
+    }
+  },
+  "fainting": {
+    "title": "Fainting",
+    "warningSigns": ["Sudden brief loss of consciousness", "Pale, sweaty skin before fainting"],
+    "doNot": ["Do not give food or water immediately after fainting.", "Do not force the person to sit or stand up quickly."],
+    "whenToCall911": ["Person does not regain consciousness within a minute.", "Fainting occurs with chest pain, irregular heartbeat, or injury from a fall.", "Repeated fainting episodes."],
+    "tree": {
+      "i1": "Lay the person flat and raise their legs about 12 inches. Loosen tight clothing around the neck.",
+      "q1": "Did they regain consciousness within about a minute?",
+      "i2": "Help them sit up slowly once alert. Ensure fresh air and space around them.",
+      "i3": "Call 911 now — this needs urgent medical attention."
+    }
+  },
+  "asthma-attack": {
+    "title": "Asthma Attack",
+    "warningSigns": ["Wheezing or whistling breath sounds", "Shortness of breath", "Chest tightness"],
+    "doNot": ["Do not let the person lie flat — keep them upright.", "Do not leave them alone."],
+    "whenToCall911": ["No improvement after using an inhaler.", "Lips or fingertips turning blue.", "Person cannot speak in full sentences or is exhausted from breathing effort."],
+    "tree": {
+      "i1": "Help the person sit upright and stay calm. Do not let them lie flat.",
+      "q1": "Do they have a reliever inhaler with them?",
+      "i2": "Assist them in using their inhaler and encourage slow, steady breaths.",
+      "q2": "Are they improving after using the inhaler?",
+      "i3": "Continue to monitor them and give repeat inhaler doses per their action plan if symptoms return.",
+      "i4": "Call 911 now. Keep them upright and calm until help arrives."
+    }
+  },
+  "choking": {
+    "title": "Choking",
+    "warningSigns": ["Clutching the throat", "Unable to speak, cough, or breathe"],
+    "doNot": ["Do not perform abdominal thrusts if the person can still cough or speak."],
+    "whenToCall911": ["Object cannot be dislodged.", "Person becomes unconscious."],
+    "tree": {
+      "q1": "Can the person cough, speak, or breathe?",
+      "i1": "Encourage them to keep coughing forcefully. Stay with them and monitor closely.",
+      "q2": "Did the object come out and are they breathing normally now?",
+      "i3": "Good. Continue to monitor them and seek medical check-up if discomfort persists.",
+      "i2": "Give 5 firm back blows between the shoulder blades with the heel of your hand.",
+      "i4": "If that doesn't work, give 5 abdominal thrusts (Heimlich maneuver): stand behind them, fist above navel, thrust inward and upward.",
+      "q3": "Is the object out and are they breathing now?",
+      "i5": "Keep alternating 5 back blows and 5 abdominal thrusts. Call 911 now if not already called."
+    }
+  },
+  "heart-attack": {
+    "title": "Heart Attack",
+    "warningSigns": ["Chest pain or pressure", "Pain radiating to arm, jaw, or back", "Shortness of breath, cold sweat"],
+    "doNot": ["Do not let the person exert themselves.", "Do not give food or drink."],
+    "whenToCall911": ["Any suspected heart attack — call immediately."],
+    "tree": {
+      "q1": "Is the person conscious and responsive?",
+      "i1": "Call 911 immediately. Have the person sit down, rest, and stay calm.",
+      "q2": "Does the person have prescribed heart medication (e.g. aspirin) with them?",
+      "i2": "Help them take their prescribed medication as directed. Continue to monitor them until help arrives.",
+      "i4": "Loosen tight clothing and keep them calm and still until responders arrive.",
+      "i3": "Check for breathing. If not breathing normally, begin CPR immediately (see CPR Guide) and call 911."
+    }
+  },
+  "stroke": {
+    "title": "Stroke",
+    "warningSigns": ["Face drooping", "Arm weakness", "Speech difficulty"],
+    "doNot": ["Do not give food, drink, or medication.", "Do not let them drive themselves."],
+    "whenToCall911": ["Any suspected stroke — time is critical, call immediately."],
+    "tree": {
+      "q1": "Ask them to smile — does one side of the face droop?",
+      "q2": "Ask them to raise both arms — does one arm drift downward?",
+      "q3": "Ask them to repeat a simple sentence — is speech slurred or strange?",
+      "i1": "These are signs of a possible stroke. Call 911 immediately and note the time symptoms started.",
+      "i3": "Keep them calm, seated or lying with head slightly raised. Do not give food, drink, or medication. Monitor breathing until help arrives.",
+      "i2": "No clear signs detected, but if you still suspect a stroke, call 911 and seek medical evaluation immediately."
+    }
+  },
+  "seizure": {
+    "title": "Seizure",
+    "warningSigns": ["Sudden convulsions or stiffening", "Loss of awareness", "Unusual jerking movements"],
+    "doNot": ["Do not hold the person down or restrict movement.", "Do not put anything in their mouth."],
+    "whenToCall911": ["Seizure lasts longer than 5 minutes.", "Person does not regain consciousness afterward.", "This is their first known seizure."],
+    "tree": {
+      "i1": "Clear the area of hard or sharp objects. Do not restrain them.",
+      "i2": "Cushion their head with something soft. Time the seizure.",
+      "q1": "Has the seizure lasted longer than 5 minutes?",
+      "i3": "Call 911 now — prolonged seizures require emergency care.",
+      "q2": "Has the shaking/convulsing stopped?",
+      "i4": "Turn them gently onto their side (recovery position) to keep the airway clear. Stay with them until fully alert."
+    }
+  }
+},
+"disasters": {
+  "typhoon": {
+    "title": "Typhoon",
+    "before": ["Monitor weather advisories.", "Prepare Go Bag.", "Charge phones.", "Store food and water.", "Waterproof important documents."],
+    "during": ["Stay indoors.", "Stay away from windows.", "Listen to official announcements.", "Evacuate immediately if instructed."],
+    "after": ["Avoid floodwater.", "Inspect your house.", "Report hazards.", "Continue monitoring advisories."],
+    "firstAid": ["Treat cuts and wounds with clean water and antiseptic.", "Watch for signs of hypothermia if wet and cold.", "Do not touch downed power lines or wet electrical equipment."]
+  },
+  "flood": {
+    "title": "Flood",
+    "before": ["Know your area's flood risk and evacuation routes.", "Move valuables and documents to higher ground.", "Prepare a Go Bag near the door.", "Keep a battery-powered radio."],
+    "during": ["Move to higher ground immediately.", "Avoid walking or driving through floodwater.", "Turn off electricity at the main breaker if safe to do so.", "Avoid contact with floodwater — it may be contaminated."],
+    "after": ["Avoid returning home until authorities declare it safe.", "Do not drink tap water until confirmed safe.", "Discard food that contacted floodwater.", "Watch for weakened structures and hidden debris."],
+    "firstAid": ["Clean wounds thoroughly to prevent infection from contaminated water.", "Watch for symptoms of waterborne illness (fever, diarrhea).", "Seek care immediately for wounds exposed to floodwater."]
+  },
+  "earthquake": {
+    "title": "Earthquake",
+    "before": ["Identify safe spots in each room (under sturdy tables).", "Secure heavy furniture to walls.", "Prepare a Go Bag and family meeting place.", "Practice Duck, Cover, and Hold On drills."],
+    "during": ["Duck, Cover, and Hold On.", "Stay away from windows and heavy furniture.", "If outdoors, move to an open area away from buildings.", "If driving, pull over and stay inside the vehicle."],
+    "after": ["Check yourself and others for injuries.", "Expect aftershocks.", "Inspect for gas leaks and structural damage before re-entering.", "Avoid using elevators."],
+    "firstAid": ["Control bleeding with direct pressure using a clean cloth.", "Do not move someone with a suspected spinal injury unless in immediate danger.", "Treat for shock: keep the person warm and lying down if possible."]
+  },
+  "fire": {
+    "title": "Fire",
+    "before": ["Install and test smoke detectors.", "Plan and practice a fire escape route.", "Keep a fire extinguisher accessible.", "Avoid overloading electrical outlets."],
+    "during": ["Get low and go — crawl under smoke.", "Feel doors before opening; do not open if hot.", "Stop, Drop, and Roll if clothing catches fire.", "Never use elevators during a fire."],
+    "after": ["Do not re-enter the building until cleared by firefighters.", "Have a professional inspect for structural damage.", "Document damage for insurance before cleanup."],
+    "firstAid": ["Cool burns under cool (not ice-cold) running water for 10-20 minutes.", "Do not apply ointments, butter, or ice to burns.", "Cover burns loosely with a clean, dry cloth and seek medical care."]
+  },
+  "volcanic-eruption": {
+    "title": "Volcanic Eruption",
+    "before": ["Know your distance from the nearest active volcano and evacuation zones.", "Prepare N95 masks and goggles for ashfall.", "Prepare a Go Bag and know evacuation routes.", "Monitor PHIVOLCS advisories."],
+    "during": ["Evacuate immediately if instructed by authorities.", "Wear a mask and goggles to protect against ashfall.", "Stay indoors with windows and doors closed if not evacuating.", "Avoid river valleys and low-lying areas due to lahar risk."],
+    "after": ["Clear ash from roofs to prevent collapse.", "Continue wearing masks outdoors until ash settles.", "Avoid driving in heavy ashfall — it reduces visibility and damages engines.", "Continue monitoring PHIVOLCS advisories for lahar warnings."],
+    "firstAid": ["Flush eyes and skin exposed to ash with clean water.", "Cover nose and mouth to avoid inhaling ash.", "Seek medical care for breathing difficulty, especially for asthma sufferers."]
+  }
+},
+"cpr": {
+  "adult": {
+    "title": "Adult CPR",
+    "ageRange": "Adults and teens (puberty and older)",
+    "checkResponsiveness": ["Tap their shoulders firmly and shout, \"Are you okay?\"", "Check if they are breathing normally — look for chest movement.", "If unresponsive and not breathing normally, call 911 immediately."],
+    "handPosition": "Place the heel of one hand on the center of the chest, other hand on top, fingers interlaced.",
+    "compressionDepth": "About 5-6 cm (2 inches) deep.",
+    "compressionRate": "100-120 compressions per minute.",
+    "cycleInstructions": ["Push hard and fast in the center of the chest, allowing full chest recoil between compressions.", "After 30 compressions, give 2 rescue breaths if trained to do so (tilt head back, pinch nose, breathe until chest rises).", "If untrained or uncomfortable giving breaths, continue hands-only compressions without stopping.", "Repeat cycles of 30 compressions and 2 breaths until help arrives."],
+    "whenToStop": ["The person starts breathing normally or shows signs of life.", "Emergency responders arrive and take over.", "You become too exhausted to continue safely.", "The scene becomes unsafe."]
+  },
+  "child": {
+    "title": "Child CPR",
+    "ageRange": "Ages 1 year to puberty",
+    "checkResponsiveness": ["Tap their shoulders and shout their name or \"Are you okay?\"", "Check if they are breathing normally — look for chest movement.", "If unresponsive and not breathing normally, call 911 immediately."],
+    "handPosition": "Use one or two hands (whichever gives adequate depth) on the center of the chest.",
+    "compressionDepth": "About 5 cm (2 inches), or about one-third the depth of the chest.",
+    "compressionRate": "100-120 compressions per minute.",
+    "cycleInstructions": ["Push firmly in the center of the chest, allowing full chest recoil between compressions.", "After 30 compressions, give 2 rescue breaths if trained to do so.", "If untrained or uncomfortable giving breaths, continue hands-only compressions without stopping.", "Repeat cycles of 30 compressions and 2 breaths until help arrives."],
+    "whenToStop": ["The child starts breathing normally or shows signs of life.", "Emergency responders arrive and take over.", "You become too exhausted to continue safely.", "The scene becomes unsafe."]
+  },
+  "infant": {
+    "title": "Infant CPR",
+    "ageRange": "Under 1 year old",
+    "checkResponsiveness": ["Flick the sole of the foot or gently tap and shout to check responsiveness.", "Check if the infant is breathing normally — look for chest movement.", "If unresponsive and not breathing normally, call 911 immediately."],
+    "handPosition": "Use two fingers (not palms) placed just below the nipple line, at the center of the chest.",
+    "compressionDepth": "About 4 cm (1.5 inches), or about one-third the depth of the chest.",
+    "compressionRate": "100-120 compressions per minute.",
+    "cycleInstructions": ["Use two fingers to press firmly, allowing full chest recoil between compressions.", "After 30 compressions, give 2 gentle rescue breaths if trained to do so (cover the infant's mouth and nose with your mouth).", "If untrained or uncomfortable giving breaths, continue gentle compressions without stopping.", "Repeat cycles of 30 compressions and 2 breaths until help arrives."],
+    "whenToStop": ["The infant starts breathing normally or shows signs of life.", "Emergency responders arrive and take over.", "You become too exhausted to continue safely.", "The scene becomes unsafe."]
+  }
+},
+  "common": {
+    "yes": "YES",
+    "no": "NO",
+    "call911": "Call 911 Now",
+    "guidanceComplete": "Guidance complete. Continue monitoring until help arrives.",
+    "before": "Before", "during": "During", "after": "After", "firstAid": "First Aid",
+    "warningSigns": "⚠️ Warning Signs", "doNot": "🚫 Do NOT", "firstAidSteps": "✅ First Aid Steps", "call911If": "📞 Call 911 If:",
+    "checkResponsiveness": "1. Check Responsiveness", "handPosition": "2. Hand Position",
+    "depth": "Depth", "rate": "Rate", "compressionCycle": "3. Compression Cycle ({{compressions}}:{{breaths}})",
+    "compressionTimer": "Compression Timer", "whenToStop": "🛑 When to Stop",
+    "next": "Next"
+  },
+  "medicalEmergency": { "title": "Medical Emergency"},
+  "cprGuide": {
+    "title": "CPR Guide",
+    "subtitle": "Select the correct guide based on the person's age."
+  },
+    "disasterPreparedness": {
+    "title": "Disaster Preparedness",
+    "emergencyKit": "Emergency Kit"
+  },
+  "emergency": {
+    "title": "Quick Access",
+    "emergencyAssistant": "Emergency Assistant",
+    "guidedDecisionSupport": "Guided decision support"
+  },
+  "cpr2": {
+    "title": "CPR Guide",
+    "adult": "Adult",
+    "child": "Child",
+    "infant": "Infant"
+  },
+  "disaster": {
+    "title": "Disaster Preparedness",
+    "discription1": "Before",
+    "discription2": "During",
+    "discription3": "After"
+  },
+  "emergency2": {
+    "title": "Emergency Contacts",
+    "description": "911 • Police • Fire"
+  },
+  "homeView": {
+    "description": "Offline Emergency Decision Support",
+    "cardSupport": " Tap during an emergency",
+    "title":"Quick Access"
+  },
+  "panic": {
+    "title": "🚨 Emergency Assistant",
+    "description": "Select the type of emergency to receive guided instructions.",
+    "card1Title": "Medical Emergency",
+    "card1Description": "Choking, bleeding, burns, fractures, heart attack, stroke, and more.",
+    "card2Title": "Disaster Emergency",
+    "card2Description": "Typhoon, flood, earthquake, fire, volcanic eruption, and more."
+  },
+  "settingsAbout" : {
+    "title": "ABOUT",
+    "text": "About ResQ PH",
+    "description": "ResQ PH is an offline emergency decision support app built as a Nursing Informatics capstone project. Version 1.0.0.",
+    "version": "Version 1.0.0",
+    "developer": "Developed by ResQ-PH Team"
+  },
+  "settingsDisclaimer" :{
+    "title": "DISCLAIMER",
+    "text": "Disclaimer",
+    "description": "This app provides general first aid education based on WHO, Philippine Red Cross, DOH, and AHA guidance. It is not a substitute for professional medical care. Always call 911 in a real emergency."
+  },
+  "settingsReset": {
+    "title": "RESET DATA",
+    "text": "Reset All Data",
+    "description": "Are you sure you want to reset all data? This action cannot be undone.",
+    "confirm": "Yes, Reset",
+    "cancel": "Cancel"
+  },
+  "settingsLanguage": {
+      "text": "Language",
+      "optionTitle": "Select Language"
+  }
+}
