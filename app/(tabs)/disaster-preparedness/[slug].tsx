@@ -4,6 +4,8 @@ import { useTranslation } from "react-i18next";
 
 import BackButton from "../../components/backButton";
 import TextLogo from "../../components/textLogo";
+import VoiceControls from "../../components/voice/VoiceControls";
+import { useVoiceGuidance } from "../../../hooks/useVoiceGuidance";
 import { getDisasterBySlug } from "../../../data/disaster/disaster";
 
 function Section({ title, color, items }: { title: string; color: string; items: string[] }) {
@@ -31,6 +33,9 @@ export default function DisasterDetailScreen() {
   const during = t(`disasters.${disaster.slug}.during`, { returnObjects: true }) as string[];
   const after = t(`disasters.${disaster.slug}.after`, { returnObjects: true }) as string[];
   const firstAid = t(`disasters.${disaster.slug}.firstAid`, { returnObjects: true }) as string[];
+  const fullText = [...before, ...during, ...after, ...firstAid].join(" ");
+
+  const { speak, stop, repeat, isSpeaking } = useVoiceGuidance();
 
   return (
     <ScrollView className="flex-1 bg-slate-100">
@@ -48,6 +53,14 @@ export default function DisasterDetailScreen() {
         <Section title={t("common.during")} color="#CA8A04" items={during} />
         <Section title={t("common.after")} color="#2563EB" items={after} />
         <Section title={t("common.firstAid")} color="#DC2626" items={firstAid} />
+
+        <VoiceControls
+          text={fullText}
+          isSpeaking={isSpeaking}
+          onPlay={speak}
+          onStop={stop}
+          onRepeat={repeat}
+        />
       </View>
     </ScrollView>
   );

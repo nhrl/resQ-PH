@@ -372,5 +372,13 @@
   "settingsLanguage": {
       "text": "Language",
       "optionTitle": "Select Language"
-  }
+  },
+ "settings": {
+  "title": "Settings",
+  "general": "GENERAL",
+  "voiceGuidance": "VOICE GUIDANCE",
+  "voiceSpeed": "Voice Speed",
+  "voicePreviewText": "This is how voice guidance will sound.",
+  "data": "DATA"
+}
 }

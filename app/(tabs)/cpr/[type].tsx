@@ -6,12 +6,14 @@ import BackButton from "../../components/backButton";
 import TextLogo from "../../components/textLogo";
 import CompressionTimer from "../../components/emergency/CompressionTimer";
 import { getCPRGuideByType } from "../../../data/cpr/cpr";
+import VoiceControls from "../../components/voice/VoiceControls";
+import { useVoiceGuidance } from "../../../hooks/useVoiceGuidance";
 
 export default function CPRDetailScreen() {
   const { t } = useTranslation();
   const { type } = useLocalSearchParams<{ type: string }>();
   const guide = getCPRGuideByType(type);
-
+  const { speak, stop, repeat, isSpeaking } = useVoiceGuidance();
   if (!guide) {
     router.replace("/(tabs)/cpr");
     return null;
@@ -20,6 +22,7 @@ export default function CPRDetailScreen() {
   const checkResponsiveness = t(`cpr.${guide.type}.checkResponsiveness`, { returnObjects: true }) as string[];
   const cycleInstructions = t(`cpr.${guide.type}.cycleInstructions`, { returnObjects: true }) as string[];
   const whenToStop = t(`cpr.${guide.type}.whenToStop`, { returnObjects: true }) as string[];
+  const fullCycleText = cycleInstructions.join(" ");
 
   return (
     <ScrollView className="flex-1 bg-slate-100">
@@ -63,6 +66,14 @@ export default function CPRDetailScreen() {
             <Text className="flex-1">{step}</Text>
           </View>
         ))}
+
+        <VoiceControls
+          text={fullCycleText}
+          isSpeaking={isSpeaking}
+          onPlay={speak}
+          onStop={stop}
+          onRepeat={repeat}
+        />
 
         <Text className="text-lg font-bold mt-8">{t("common.compressionTimer")}</Text>
         <CompressionTimer />
