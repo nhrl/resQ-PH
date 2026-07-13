@@ -1,7 +1,7 @@
 /**
- * Global app-level state: language, theme, and initialization status.
- * Persisted values (language, theme) are saved to AsyncStorage so they
- * survive app restarts without needing the database.
+ * Global app-level state: language, theme, voice speed, and
+ * initialization status. Persisted values are saved to AsyncStorage so
+ * they survive app restarts without needing the database.
  *
  * LANGUAGE_STORAGE_KEY is exported so other files (splash screen,
  * language selection screen) check/read the exact same key — never
@@ -17,19 +17,23 @@ interface AppState {
   isAppReady: boolean;
   language: LanguageCode;
   isDarkMode: boolean;
+  voiceRate: number;
   setAppReady: (ready: boolean) => void;
   setLanguage: (language: LanguageCode) => Promise<void>;
   setDarkMode: (isDark: boolean) => Promise<void>;
+  setVoiceRate: (rate: number) => Promise<void>;
   hydrate: () => Promise<void>;
 }
 
 export const LANGUAGE_STORAGE_KEY = "@resqph/language";
 const DARK_MODE_STORAGE_KEY = "@resqph/darkMode";
+const VOICE_RATE_KEY = "@resqph/voiceRate";
 
 export const useAppStore = create<AppState>((set) => ({
   isAppReady: false,
   language: "en",
   isDarkMode: false,
+  voiceRate: 1.0,
 
   setAppReady: (ready) => set({ isAppReady: ready }),
 
@@ -43,19 +47,22 @@ export const useAppStore = create<AppState>((set) => ({
     set({ isDarkMode: isDark });
   },
 
-  /**
-   * Loads persisted preferences from AsyncStorage on app boot.
-   * Falls back to defaults if nothing has been stored yet (first launch).
-   */
+  setVoiceRate: async (rate) => {
+    await AsyncStorage.setItem(VOICE_RATE_KEY, String(rate));
+    set({ voiceRate: rate });
+  },
+
   hydrate: async () => {
-    const [storedLanguage, storedDarkMode] = await Promise.all([
+    const [storedLanguage, storedDarkMode, storedRate] = await Promise.all([
       AsyncStorage.getItem(LANGUAGE_STORAGE_KEY),
       AsyncStorage.getItem(DARK_MODE_STORAGE_KEY),
+      AsyncStorage.getItem(VOICE_RATE_KEY),
     ]);
 
     set({
       language: (storedLanguage as LanguageCode) ?? "en",
       isDarkMode: storedDarkMode === "true",
+      voiceRate: storedRate ? parseFloat(storedRate) : 1.0,
     });
   },
 }));

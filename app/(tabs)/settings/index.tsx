@@ -1,36 +1,29 @@
-/**
- * Settings screen. Covers: Language, Dark Mode, Voice Speed, Voice Volume,
- * Reset Data, About, Disclaimer (per project spec).
- *
- * Voice Speed/Volume are stored here now (via useAppStore) so the values
- * are ready to consume once the Voice Guidance feature is built — they
- * don't yet affect any audio playback since that feature doesn't exist yet.
- */
 import { useState } from "react";
 import { ScrollView, View, Text, Alert } from "react-native";
-import {
-  Languages,
-  Trash2,
-  Info,
-  FileText,
-} from "lucide-react-native";
-
+import { Languages, Gauge, Volume2, Trash2, Info, FileText } from "lucide-react-native";
+import Slider from "@react-native-community/slider";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useTranslation } from "react-i18next";
 
 import TextLogo from "../../components/textLogo";
 import SettingsRow from "../../components/settings/SettingsRow";
 import LanguagePickerModal from "../../components/settings/LanguagePickerModal";
 import { useAppStore } from "../../../stores/useAppStore";
 import { applyPersistedLanguage } from "../../../localization/i18n";
+import { useVoiceGuidance } from "../../../hooks/useVoiceGuidance";
 import { SUPPORTED_LANGUAGES } from "../../../types/i18n";
 import type { LanguageCode } from "../../../types/i18n";
-import { useTranslation } from "react-i18next";
 
 export default function SettingsScreen() {
+  const { t } = useTranslation();
   const [showLanguageModal, setShowLanguageModal] = useState(false);
+
   const language = useAppStore((state) => state.language);
   const setLanguage = useAppStore((state) => state.setLanguage);
-  const { t } = useTranslation();
+  const voiceRate = useAppStore((state) => state.voiceRate);
+  const setVoiceRate = useAppStore((state) => state.setVoiceRate);
+  const { speak } = useVoiceGuidance();
+
   const currentLanguageLabel =
     SUPPORTED_LANGUAGES.find((lang) => lang.code === language)?.nativeLabel ?? "English";
 
@@ -58,7 +51,6 @@ export default function SettingsScreen() {
     );
   }
 
-
   return (
     <ScrollView className="flex-1 bg-slate-100">
       <View className="px-5 pt-14 pb-10">
@@ -66,9 +58,9 @@ export default function SettingsScreen() {
           <TextLogo />
         </View>
 
-        <Text className="text-3xl font-bold mt-6 mb-6">⚙️ Settings</Text>
+        <Text className="text-3xl font-bold mt-6 mb-6">⚙️ {t("settings.title")}</Text>
 
-        <Text className="text-sm font-bold text-gray-500 mb-2">GENERAL</Text>
+        <Text className="text-sm font-bold text-gray-500 mb-2">{t("settings.general")}</Text>
         <SettingsRow
           icon={Languages}
           label={t("settingsLanguage.text")}
@@ -76,7 +68,26 @@ export default function SettingsScreen() {
           onPress={() => setShowLanguageModal(true)}
         />
 
-        <Text className="text-sm font-bold text-gray-500 mt-6 mb-2">DATA</Text>
+        <Text className="text-sm font-bold text-gray-500 mt-6 mb-2">{t("settings.voiceGuidance")}</Text>
+
+        <View className="bg-white rounded-2xl p-4 mb-3">
+          <View className="flex-row items-center mb-2">
+            <Gauge size={20} color="#111827" />
+            <Text className="ml-3 font-semibold">{t("settings.voiceSpeed")}</Text>
+            <Text className="ml-auto text-gray-400">{voiceRate.toFixed(1)}x</Text>
+          </View>
+          <Slider
+            minimumValue={0.5}
+            maximumValue={2.0}
+            step={0.1}
+            value={voiceRate}
+            onValueChange={setVoiceRate}
+            onSlidingComplete={(value) => speak(t("settings.voicePreviewText"))}
+            minimumTrackTintColor="#D32F2F"
+          />
+        </View>
+
+        <Text className="text-sm font-bold text-gray-500 mt-6 mb-2">{t("settings.data")}</Text>
         <SettingsRow icon={Trash2} label={t("settingsReset.text")} type="info" onPress={handleResetData} />
 
         <Text className="text-sm font-bold text-gray-500 mt-6 mb-2">{t("settingsAbout.title")}</Text>
@@ -84,23 +95,13 @@ export default function SettingsScreen() {
           icon={Info}
           label={t("settingsAbout.text")}
           type="info"
-          onPress={() =>
-            Alert.alert(
-              t("settingsAbout.text"),
-              t("settingsAbout.description")
-            )
-          }
+          onPress={() => Alert.alert(t("settingsAbout.text"), t("settingsAbout.description"))}
         />
         <SettingsRow
           icon={FileText}
           label={t("settingsDisclaimer.text")}
           type="info"
-          onPress={() =>
-            Alert.alert(
-              t("settingsDisclaimer.text"),
-              t("settingsDisclaimer.description")
-            )
-          }
+          onPress={() => Alert.alert(t("settingsDisclaimer.text"), t("settingsDisclaimer.description"))}
         />
       </View>
 

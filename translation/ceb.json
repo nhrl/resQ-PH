@@ -372,5 +372,13 @@
 "settingsLanguage": {
   "text": "Pinulongan",
   "optionTitle": "Pilia ang Pinulongan"
+},
+"settings": {
+  "title": "Mga Setting",
+  "general": "KINATIBUK-AN",
+  "voiceGuidance": "GIYA SA TINGOG",
+  "voiceSpeed": "Katulin sa Tingog",
+  "voicePreviewText": "Mao ni ang tingog nga gamiton sa giya.",
+  "data": "DATA"
 }
 }

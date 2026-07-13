@@ -9,8 +9,10 @@ import { View, Text, TouchableOpacity } from "react-native";
 import { Phone } from "lucide-react-native";
 import * as Linking from "expo-linking";
 import { useTranslation } from "react-i18next";
-
+import VoiceControls from "../voice/VoiceControls";
+import { useVoiceGuidance } from "../../../hooks/useVoiceGuidance";
 import type { DecisionNodeStructure } from "../../../types/medical";
+import {useEffect} from "react";
 
 interface DecisionTreeRunnerProps {
   slug: string;
@@ -21,9 +23,15 @@ interface DecisionTreeRunnerProps {
 export default function DecisionTreeRunner({ slug, startNodeId, nodes }: DecisionTreeRunnerProps) {
   const { t } = useTranslation();
   const [currentNodeId, setCurrentNodeId] = useState(startNodeId);
-
+  const { speak, stop, repeat, isSpeaking } = useVoiceGuidance();
   const nodeMap = new Map<string, DecisionNodeStructure>(nodes.map((n) => [n.id, n]));
   const currentNode = nodeMap.get(currentNodeId);
+
+  useEffect(() => {
+    speak(nodeText);
+    return () => stop();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentNodeId]);
 
   if (!currentNode) {
     return <Text className="mt-8 text-center">{t("common.guidanceComplete")}</Text>;
@@ -56,7 +64,14 @@ export default function DecisionTreeRunner({ slug, startNodeId, nodes }: Decisio
       <View className="bg-slate-100 rounded-3xl p-6">
         <Text className="text-2xl font-bold text-center">{nodeText}</Text>
       </View>
-
+      <VoiceControls
+        text={nodeText}
+        isSpeaking={isSpeaking}
+        onPlay={speak}
+        onStop={stop}
+        onRepeat={repeat}
+      />
+      
       {currentNode.type === "question" ? (
         <View className="flex-row mt-6 gap-4">
           <TouchableOpacity

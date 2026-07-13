@@ -372,5 +372,13 @@
 "settingsLanguage": {
   "text": "Wika",
   "optionTitle": "Pumili ng Wika"
+},
+"settings": {
+  "title": "Mga Setting",
+  "general": "PANGKALAHATAN",
+  "voiceGuidance": "GABAY SA BOSES",
+  "voiceSpeed": "Bilis ng Boses",
+  "voicePreviewText": "Ganito ang tunog ng gabay sa boses.",
+  "data": "DATA"
 }
 }
