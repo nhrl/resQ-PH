@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ScrollView, View, Text, Alert } from "react-native";
+import { ScrollView, View, Text, Alert, TouchableOpacity } from "react-native";
 import { Languages, Gauge, Volume2, Trash2, Info, FileText } from "lucide-react-native";
 import Slider from "@react-native-community/slider";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -13,6 +13,8 @@ import { applyPersistedLanguage } from "../../../localization/i18n";
 import { useVoiceGuidance } from "../../../hooks/useVoiceGuidance";
 import { SUPPORTED_LANGUAGES } from "../../../types/i18n";
 import type { LanguageCode } from "../../../types/i18n";
+import { useCrashAlertStore } from "../../../stores/useCrashAlertStore";
+import { AlertTriangle } from "lucide-react-native";
 
 export default function SettingsScreen() {
   const { t } = useTranslation();
@@ -32,6 +34,10 @@ export default function SettingsScreen() {
     await applyPersistedLanguage(code);
     setShowLanguageModal(false);
   }
+
+  const isMonitoringEnabled = useCrashAlertStore((s) => s.isMonitoringEnabled);
+  const setMonitoringEnabled = useCrashAlertStore((s) => s.setMonitoringEnabled);
+  const triggerCrash = useCrashAlertStore((s) => s.triggerCrash);
 
   function handleResetData() {
     Alert.alert(
@@ -86,7 +92,29 @@ export default function SettingsScreen() {
             minimumTrackTintColor="#D32F2F"
           />
         </View>
-
+        <Text className="text-sm font-bold text-gray-500 mt-6 mb-2">{t("crashAlert.sectionTitle")}</Text>
+        <SettingsRow
+          icon={AlertTriangle}
+          label={t("crashAlert.enableMonitoring")}
+          type="toggle"
+          toggleValue={isMonitoringEnabled}
+          onToggle={setMonitoringEnabled}
+        />
+        {isMonitoringEnabled && (
+          <TouchableOpacity
+            onPress={triggerCrash}
+            className="bg-yellow-100 border-2 border-yellow-500 rounded-2xl p-4 mb-3"
+            accessibilityRole="button"
+            accessibilityLabel={t("crashAlert.simulateCrash")}
+          >
+            <Text className="text-center font-bold text-yellow-800">
+              ⚠️ {t("crashAlert.simulateCrash")}
+            </Text>
+            <Text className="text-center text-xs text-yellow-700 mt-1">
+              {t("crashAlert.simulateCrashHint")}
+            </Text>
+          </TouchableOpacity>
+        )}
         <Text className="text-sm font-bold text-gray-500 mt-6 mb-2">{t("settings.data")}</Text>
         <SettingsRow icon={Trash2} label={t("settingsReset.text")} type="info" onPress={handleResetData} />
 

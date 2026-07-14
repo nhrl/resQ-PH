@@ -45,7 +45,8 @@
         {
           "locationAlwaysAndWhenInUsePermission": "ResQ PH uses your location to guide emergency responders to you."
         }
-      ]
+      ],
+      "expo-audio"
     ],
     "experiments": {
       "typedRoutes": true

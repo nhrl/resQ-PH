@@ -1,0 +1,1 @@
+export type CrashAlertPhase = "idle" | "countdown" | "active";

@@ -380,5 +380,19 @@
   "voiceSpeed": "Katulin sa Tingog",
   "voicePreviewText": "Mao ni ang tingog nga gamiton sa giya.",
   "data": "DATA"
+},
+"crashAlert": {
+  "sectionTitle": "CRASH ALERT",
+  "enableMonitoring": "I-enable ang Crash Alert Monitoring",
+  "simulateCrash": "I-simulate ang Aksidente (Test)",
+  "simulateCrashHint": "Kini magpakita sa managsama nga alerto para sa testing.",
+  "possibleImpact": "Posibleng Aksidente ang Nadetektahan",
+  "areYouSafe": "Luwas ka ba?",
+  "yesImSafe": "OO, Luwas Ko",
+  "noNeedHelp": "DILI, Kinahanglan Ko og Tabang",
+  "emergencyTitle": "EMERGENCY!",
+  "emergencyMessage": "PALIHUG TAWAG SA 911. GIKINAHANGLAN ANG FIRST AID.",
+  "openPanicMode": "Ablihi ang Panic Mode",
+  "imOkCancel": "Okay Ra Ko, Kanselaha ang Alerto"
 }
 }

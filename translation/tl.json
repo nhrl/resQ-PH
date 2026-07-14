@@ -380,5 +380,19 @@
   "voiceSpeed": "Bilis ng Boses",
   "voicePreviewText": "Ganito ang tunog ng gabay sa boses.",
   "data": "DATA"
+},
+"crashAlert": {
+  "sectionTitle": "CRASH ALERT",
+  "enableMonitoring": "I-enable ang Crash Alert Monitoring",
+  "simulateCrash": "I-simulate ang Aksidente (Test)",
+  "simulateCrashHint": "Ito ay magpapakita ng parehong daloy ng alerto para sa testing.",
+  "possibleImpact": "Posibleng Aksidente ang Natukoy",
+  "areYouSafe": "Ligtas ka ba?",
+  "yesImSafe": "OO, Ligtas Ako",
+  "noNeedHelp": "HINDI, Kailangan Ko ng Tulong",
+  "emergencyTitle": "EMERGENCY!",
+  "emergencyMessage": "MANGYARING TUMAWAG SA 911. KAILANGAN NG FIRST AID.",
+  "openPanicMode": "Buksan ang Panic Mode",
+  "imOkCancel": "Ayos Lang Ako, Kanselahin ang Alerto"
 }
 }
