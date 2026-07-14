@@ -380,5 +380,19 @@
   "voiceSpeed": "Voice Speed",
   "voicePreviewText": "This is how voice guidance will sound.",
   "data": "DATA"
+},
+"crashAlert": {
+  "sectionTitle": "CRASH ALERT",
+  "enableMonitoring": "Enable Crash Alert Monitoring",
+  "simulateCrash": "Simulate Crash (Test)",
+  "simulateCrashHint": "Triggers the same alert flow as a real detected crash, for testing.",
+  "possibleImpact": "Possible Impact Detected",
+  "areYouSafe": "Are you safe?",
+  "yesImSafe": "YES, I'm Safe",
+  "noNeedHelp": "NO, I Need Help",
+  "emergencyTitle": "EMERGENCY!",
+  "emergencyMessage": "PLEASE CALL 911. FIRST AID NEEDED.",
+  "openPanicMode": "Open Panic Mode",
+  "imOkCancel": "I'm OK, Cancel Alert"
 }
 }
