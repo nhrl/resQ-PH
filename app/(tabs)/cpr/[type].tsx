@@ -1,19 +1,21 @@
-import { ScrollView, View, Text } from "react-native";
+import { ScrollView, View, Text, Image } from "react-native";
 import { useLocalSearchParams, router } from "expo-router";
 import { useTranslation } from "react-i18next";
 
 import BackButton from "../../components/backButton";
 import TextLogo from "../../components/textLogo";
 import CompressionTimer from "../../components/emergency/CompressionTimer";
-import { getCPRGuideByType } from "../../../data/cpr/cpr";
 import VoiceControls from "../../components/voice/VoiceControls";
 import { useVoiceGuidance } from "../../../hooks/useVoiceGuidance";
+import { getCPRGuideByType } from "../../../data/cpr/cpr";
+import { getCprImage } from "../../../data/cpr/cprImage";
 
 export default function CPRDetailScreen() {
   const { t } = useTranslation();
   const { type } = useLocalSearchParams<{ type: string }>();
   const guide = getCPRGuideByType(type);
   const { speak, stop, repeat, isSpeaking } = useVoiceGuidance();
+
   if (!guide) {
     router.replace("/(tabs)/cpr");
     return null;
@@ -27,7 +29,7 @@ export default function CPRDetailScreen() {
   return (
     <ScrollView className="flex-1 bg-slate-100">
       <View className="px-5 pt-14 pb-10">
-        <BackButton />
+        <BackButton/>
         <View className="mb-4">
           <TextLogo />
         </View>
@@ -60,12 +62,26 @@ export default function CPRDetailScreen() {
             breaths: guide.breathsPerCycle,
           })}
         </Text>
-        {cycleInstructions.map((step, i) => (
-          <View key={i} className="flex-row mt-2">
-            <Text className="font-bold mr-2">{i + 1}.</Text>
-            <Text className="flex-1">{step}</Text>
-          </View>
-        ))}
+
+        {cycleInstructions.map((step, i) => {
+          const imageSource = guide.stepImages[i] ? getCprImage(guide.stepImages[i]) : undefined;
+          return (
+            <View key={i} className="mt-4">
+              {imageSource && (
+                <Image
+                  source={imageSource}
+                  className="w-full h-48 rounded-2xl mb-2"
+                  resizeMode="cover"
+                  accessibilityLabel={`${t(`cpr.${guide.type}.title`)} step ${i + 1}`}
+                />
+              )}
+              <View className="flex-row">
+                <Text className="font-bold mr-2">{i + 1}.</Text>
+                <Text className="flex-1">{step}</Text>
+              </View>
+            </View>
+          );
+        })}
 
         <VoiceControls
           text={fullCycleText}

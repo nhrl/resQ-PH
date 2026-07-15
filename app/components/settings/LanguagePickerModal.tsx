@@ -36,13 +36,20 @@ export default function LanguagePickerModal({
             <TouchableOpacity
               key={lang.code}
               onPress={() => onSelect(lang.code)}
-              className="flex-row items-center justify-between p-4 rounded-2xl mb-2 bg-slate-50"
+              className="bg-white rounded-2xl p-5 mb-3 border border-gray-300 flex-row items-center"
               accessibilityRole="button"
               accessibilityLabel={lang.nativeLabel}
             >
-              <Text className="text-lg font-semibold">{lang.nativeLabel}</Text>
+              <Text className="text-3xl mr-4">
+                {lang.flag}
+              </Text>
+
+              <Text className="flex-1 text-lg font-bold text-black">
+                {lang.nativeLabel}
+              </Text>
+
               {currentLanguage === lang.code && (
-                <Check size={20} color="#D32F2F" />
+                <Check size={24} color="#16A34A" />
               )}
             </TouchableOpacity>
           ))}

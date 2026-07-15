@@ -11,9 +11,9 @@ import { getDisasterBySlug } from "../../../data/disaster/disaster";
 function Section({ title, color, items }: { title: string; color: string; items: string[] }) {
   return (
     <>
-      <Text className="text-xl font-bold mt-8" style={{ color }}>{title}</Text>
+      <Text className="text-2xl font-bold" style={{ color }}>{title}</Text>
       {items.map((item, index) => (
-        <Text key={index} className={index === 0 ? "mt-3" : undefined}>• {item}</Text>
+        <Text key={index} className={`text-xl mt-2 ${index === 0 ? "mt-3" : ""}`}>• {item}</Text>
       ))}
     </>
   );
@@ -48,12 +48,18 @@ export default function DisasterDetailScreen() {
         <Text className="text-3xl font-bold mt-6">
           {t(`disasters.${disaster.slug}.title`)}
         </Text>
-
-        <Section title={t("common.before")} color="#16A34A" items={before} />
-        <Section title={t("common.during")} color="#CA8A04" items={during} />
-        <Section title={t("common.after")} color="#2563EB" items={after} />
-        <Section title={t("common.firstAid")} color="#DC2626" items={firstAid} />
-
+        <View className="border mt-8 p-3 rounded-xl border-gray-400">
+          <Section title={t("common.before")} color="#16A34A" items={before} />
+        </View>
+        <View className="border mt-8 p-3 rounded-xl border-gray-400">
+          <Section title={t("common.during")} color="#CA8A04" items={during} />
+        </View>
+        <View className="border mt-8 p-3 rounded-xl border-gray-400">
+          <Section title={t("common.after")} color="#2563EB" items={after} />
+        </View>
+        <View className="border mt-8 p-3 rounded-xl border-gray-400">
+          <Section title={t("common.firstAid")} color="#DC2626" items={firstAid} />
+        </View>
         <VoiceControls
           text={fullText}
           isSpeaking={isSpeaking}
