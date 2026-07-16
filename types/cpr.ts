@@ -9,4 +9,5 @@ export interface CPRGuide {
   cardColor: string;
   compressionsPerCycle: number;
   breathsPerCycle: number;
+  stepImages: string[];
 }

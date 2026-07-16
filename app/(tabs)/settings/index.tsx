@@ -26,8 +26,13 @@ export default function SettingsScreen() {
   const setVoiceRate = useAppStore((state) => state.setVoiceRate);
   const { speak } = useVoiceGuidance();
 
+  const currentLanguage =
+  SUPPORTED_LANGUAGES.find((lang) => lang.code === language);
+
   const currentLanguageLabel =
-    SUPPORTED_LANGUAGES.find((lang) => lang.code === language)?.nativeLabel ?? "English";
+    currentLanguage
+      ? `${currentLanguage.flag} ${currentLanguage.nativeLabel}`
+      : "🇺🇸 English";
 
   async function handleSelectLanguage(code: LanguageCode) {
     await setLanguage(code);

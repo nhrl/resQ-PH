@@ -23,7 +23,7 @@ export default function DisasterPreparednessScreen() {
           🌪 {t("disasterPreparedness.title")}
         </Text>
 
-        <View className="flex-row flex-wrap justify-between">
+        <View className="flex-col justify-between">
           {DISASTERS.map((disaster) => {
             const Icon = disaster.icon;
             const title = t(`disasters.${disaster.slug}.title`);
@@ -37,26 +37,26 @@ export default function DisasterPreparednessScreen() {
                     params: { slug: disaster.slug },
                   })
                 }
-                className="w-[48%] rounded-2xl p-4 mb-4"
+                className="w-[100%] rounded-2xl p-8 mb-4 flex-row items-center"
                 style={{ backgroundColor: disaster.cardColor }}
                 accessibilityRole="button"
                 accessibilityLabel={title}
               >
                 <Icon size={34} color={disaster.iconColor} />
-                <Text className="mt-3 text-lg font-bold">{title}</Text>
+                <Text className="ml-5 text-2xl font-bold">{title}</Text>
               </TouchableOpacity>
             );
           })}
 
           <TouchableOpacity
             onPress={() => router.push("/(tabs)/disaster-preparedness/emergency-kit")}
-            className="w-[48%] rounded-2xl p-4 mb-4"
+            className="w-[100%] rounded-2xl p-8 mb-4 flex-row items-center"
             style={{ backgroundColor: "#DCFCE7" }}
             accessibilityRole="button"
             accessibilityLabel={t("disasterPreparedness.emergencyKit")}
           >
             <Backpack size={34} color="#16A34A" />
-            <Text className="mt-3 text-lg font-bold">
+            <Text className="ml-5 text-2xl font-bold">
               {t("disasterPreparedness.emergencyKit")}
             </Text>
           </TouchableOpacity>

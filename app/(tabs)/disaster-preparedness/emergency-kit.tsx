@@ -32,7 +32,7 @@ export default function EmergencyKitScreen() {
         <Text className="text-3xl font-bold mt-6 mb-6">🎒 Emergency Kit</Text>
 
         {EMERGENCY_KIT_ITEMS.map((item, index) => (
-          <Text key={index} className="mt-3">
+          <Text key={index} className="mt-3 text-xl">
             • {item}
           </Text>
         ))}

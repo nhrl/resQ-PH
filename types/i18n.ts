@@ -8,10 +8,11 @@ export interface LanguageOption {
   code: LanguageCode;
   label: string;
   nativeLabel: string;
+  flag: string;
 }
 
 export const SUPPORTED_LANGUAGES: LanguageOption[] = [
-  { code: "en", label: "English", nativeLabel: "English" },
-  { code: "tl", label: "Filipino", nativeLabel: "Tagalog" },
-  { code: "ceb", label: "Bisaya", nativeLabel: "Binisaya" },
+  { code: "en", label: "English", nativeLabel: "English", flag: "🇺🇸" },
+  { code: "tl", label: "Filipino", nativeLabel: "Tagalog", flag: "🇵🇭"},
+  { code: "ceb", label: "Bisaya", nativeLabel: "Binisaya", flag: "🇵🇭"},
 ];

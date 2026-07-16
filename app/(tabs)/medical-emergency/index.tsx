@@ -20,7 +20,7 @@ export default function MedicalEmergencyScreen() {
 
         <Text className="text-3xl font-bold mt-6 mb-6">🩺 {t("medicalEmergency.title")}</Text>
 
-        <View className="flex-row flex-wrap justify-between">
+        <View className="flex-col justify-between">
           {MEDICAL_CONDITIONS.map((condition) => {
             const Icon = condition.icon;
             const title = t(`medical.${condition.slug}.title`);
@@ -34,13 +34,13 @@ export default function MedicalEmergencyScreen() {
                     params: { slug: condition.slug },
                   });
                 }}
-                className="w-[48%] rounded-2xl p-4 mb-4"
+                className="w-[100%] rounded-2xl p-8 mb-4 flex-row items-center"
                 style={{ backgroundColor: condition.cardColor }}
                 accessibilityRole="button"
                 accessibilityLabel={title}
               >
                 <Icon size={34} color={condition.iconColor} />
-                <Text className="mt-3 text-lg font-bold">{title}</Text>
+                <Text className="ml-5 text-2xl font-bold">{title}</Text>
               </TouchableOpacity>
             );
           })}
